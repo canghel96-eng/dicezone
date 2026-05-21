@@ -11,13 +11,37 @@ import { getDictionary, type Locale } from "@/lib/i18n";
 import { formatPrice } from "@/lib/games";
 import type { Game } from "@/types/game";
 
-export function GameCard({ game, locale }: { game: Game; locale: Locale }) {
+export function GameCard({
+  game,
+  locale,
+  variant = "default",
+}: {
+  game: Game;
+  locale: Locale;
+  variant?: "default" | "featured";
+}) {
   const d = getDictionary(locale);
+  const featured = variant === "featured";
 
   return (
     <Card className="cozy-card group flex h-full flex-col overflow-hidden rounded-2xl">
-      <CardHeader className="pb-2 pt-5">
-        <CardTitle className="font-serif text-lg font-medium">
+      {featured && (
+        <Link href={`/library/${game.slug}`} className="block">
+          <GameBoxArt
+            game={game}
+            size="featured"
+            className="rounded-b-none border-x-0 border-t-0 transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+        </Link>
+      )}
+      <CardHeader className={featured ? "space-y-3 pb-3 pt-5" : "pb-2 pt-5"}>
+        <CardTitle
+          className={
+            featured
+              ? "font-serif text-xl font-semibold leading-tight [overflow-wrap:anywhere]"
+              : "font-serif text-lg font-medium leading-tight [overflow-wrap:anywhere]"
+          }
+        >
           <Link
             href={`/library/${game.slug}`}
             className="transition-colors hover:text-primary"
@@ -25,7 +49,7 @@ export function GameCard({ game, locale }: { game: Game; locale: Locale }) {
             {game.title}
           </Link>
         </CardTitle>
-        <GameBoxArt game={game} className="mt-4" />
+        {!featured && <GameBoxArt game={game} className="mt-4" />}
         <CardDescription className="line-clamp-2 leading-relaxed">
           {game.description}
         </CardDescription>

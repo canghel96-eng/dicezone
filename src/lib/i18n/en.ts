@@ -10,6 +10,7 @@ export const en: Dictionary = {
     { href: "/corporate", label: "Corporate" },
     { href: "/kids", label: "Kids" },
     { href: "/venue", label: "Venue" },
+    { href: "/events", label: "Events" },
     { href: "/rent", label: "Rent" },
     { href: "/library", label: "Library" },
     { href: "/about", label: "About" },
@@ -18,12 +19,6 @@ export const en: Dictionary = {
   heroPill: "Board games · Teams · Families",
   ui: {
     bookEvent: "Book an event",
-    back: "Back",
-    continue: "Continue",
-    submitInquiry: "Submit inquiry",
-    submitting: "Submitting…",
-    sendMessage: "Send message",
-    sending: "Sending…",
     viewAll: "View all",
     contactUs: "Contact us",
     explore: "Explore",
@@ -31,15 +26,9 @@ export const en: Dictionary = {
     players: "players",
     rentFrom: "Rent from",
     perDay: "/day",
-    perDayWord: "per day",
-    thankYou: "Thank you!",
-    messageSent: "Message sent!",
     openMenu: "Open menu",
     mainNav: "Main",
     mobileNav: "Mobile",
-    loadingForm: "Loading form…",
-    networkError: "Network error. Please try again.",
-    somethingWrong: "Something went wrong.",
     language: "Language",
     switchToRo: "Română",
     switchToEn: "English",
@@ -52,7 +41,6 @@ export const en: Dictionary = {
     rentable: "rentable",
     "venue-only": "venue only",
   },
-  bookingSteps: ["Contact", "Details", "Location", "Review"],
   siteRegion: "Greater Metro Area",
   images: {
     hero: "Friends laughing while playing board games together",
@@ -69,6 +57,14 @@ export const en: Dictionary = {
     copyrightEnd: "for people who love to play together.",
     serving: "Serving the {region}",
   },
+  socialContact: {
+    headline: "Want to book or find out more?",
+    subtext:
+      "Message us directly on WhatsApp, Instagram, or Facebook and we'll get back to you quickly.",
+    whatsapp: "Message us on WhatsApp",
+    instagram: "Message on Instagram",
+    facebook: "Message on Facebook",
+  },
   home: {
     heroTitle: "Board games that bring people together",
     heroAccent:
@@ -82,6 +78,11 @@ export const en: Dictionary = {
     offerSubtitle:
       "From corporate offsites to kids' workshops, play-at-venue, and rentals — one curated library, many ways to play.",
     offerings: [
+      {
+        title: "Public events",
+        description:
+          "Join hosted board game nights and themed sessions open to everyone.",
+      },
       {
         title: "Corporate team building",
         description:
@@ -127,7 +128,6 @@ export const en: Dictionary = {
     ctaTitle: "Planning a team offsite or school event?",
     ctaText:
       "No gaming experience required. We bring the games, facilitation, and good vibes.",
-    ctaBook: "Book corporate event",
     galleryEyebrow: "Around the table",
     galleryTitle: "Real moments, real connection",
     gallerySubtitle:
@@ -198,11 +198,6 @@ export const en: Dictionary = {
     experienceTitle: "Teams that play together, work better together",
     experienceText:
       "Our facilitators guide the room so everyone participates — introverts included. No awkward icebreakers, just structured fun that builds real rapport.",
-    bookMetaTitle: "Book corporate event",
-    bookHeroTitle: "Book a corporate event",
-    bookHeroDescription:
-      "Tell us about your team and preferred dates. We'll follow up with a quote — online deposits via Stripe coming soon.",
-    bookFormTitle: "Corporate team building inquiry",
   },
   kids: {
     metaTitle: "Kids education",
@@ -228,11 +223,6 @@ export const en: Dictionary = {
     experienceTitle: "Learning through play, together",
     experienceText:
       "Kids practice turn-taking, teamwork, and creative thinking without feeling like a lesson. Parents and teachers love watching confidence grow around the table.",
-    bookMetaTitle: "Book kids event",
-    bookHeroTitle: "Book an educational session",
-    bookHeroDescription:
-      "Share your group details and preferred dates. We'll confirm availability and pricing by email.",
-    bookFormTitle: "Kids education inquiry",
   },
   venue: {
     metaTitle: "Partner venue",
@@ -244,11 +234,55 @@ export const en: Dictionary = {
       "We're signing our first partner venue in the {region}. Want to host a game library at your restaurant, or get notified when we launch?",
     waitlist: "Join the waitlist",
   },
+  publicEvents: {
+    metaTitle: "Public events",
+    heroTitle: "Public board game events",
+    heroDescription:
+      "Open game nights for everyone: come solo or with friends, we match tables, explain rules, and help you get into the games quickly.",
+    listEyebrow: "DiceZone calendar",
+    listTitle: "Upcoming events",
+    listSubtitle:
+      "Reserve your place at one of the planned sessions. The ticket button sends you to the Google signup form.",
+    bookTicket: "Book a ticket",
+    eventDetails: "Event details",
+    events: [
+      {
+        title: "Beginner-friendly game night",
+        date: "Friday, June 14",
+        time: "18:30–21:30",
+        location: "Bucharest · venue confirmed after signup",
+        price: "30 lei / person",
+        spots: "24 spots available",
+        description:
+          "A relaxed evening with easy-to-learn games, guided tables, and recommendations for new groups.",
+      },
+      {
+        title: "Social deduction night",
+        date: "Saturday, June 22",
+        time: "19:00–22:30",
+        location: "Bucharest · venue confirmed after signup",
+        price: "35 lei / person",
+        spots: "18 spots available",
+        description:
+          "Bluffing, deduction, and lively discussion for players who enjoy hidden-role games.",
+      },
+      {
+        title: "Family board game afternoon",
+        date: "Sunday, June 30",
+        time: "15:00–18:00",
+        location: "Bucharest · venue confirmed after signup",
+        price: "25 lei / person",
+        spots: "20 spots available",
+        description:
+          "Games for kids and adults, with rules explained on the spot and a friendly atmosphere.",
+      },
+    ],
+  },
   rent: {
     metaTitle: "Rent a game",
     heroTitle: "Rent games from our library",
     heroDescription:
-      "Take a title home for a few days. Simple daily pricing — online checkout with Stripe coming soon.",
+      "Take a title home for a few days. Simple daily pricing — message us on WhatsApp to check availability and arrange pickup.",
     browseCta: "Browse library",
     steps: [
       {
@@ -256,12 +290,12 @@ export const en: Dictionary = {
         text: "Choose from our catalog of family and strategy titles.",
       },
       {
-        title: "Select dates",
-        text: "Check availability and submit a rental inquiry.",
+        title: "Message us",
+        text: "Send us a WhatsApp, Instagram, or Facebook message to check availability.",
       },
       {
         title: "Pickup & return",
-        text: "We'll confirm pickup location and return instructions by email.",
+        text: "We'll confirm pickup location and return instructions by message.",
       },
     ],
   },
@@ -292,12 +326,7 @@ export const en: Dictionary = {
     heroTitle: "Contact us",
     heroDescription:
       "Questions about events, rentals, or partnerships? We serve the {region} and reply within 1–2 business days.",
-    writeTitle: "Get in touch",
     emailLabel: "Email:",
-    formHint: "For faster booking, use our dedicated forms for",
-    formHintCorporate: "corporate",
-    formHintKids: "kids",
-    formHintAnd: "or",
   },
   library: {
     metaTitle: "Game library",
@@ -320,65 +349,7 @@ export const en: Dictionary = {
     rentalLabel: "Rental:",
     corporateUse: "Use in corporate event",
     venueOnly: "This title is available in facilitated events only.",
-  },
-  booking: {
-    errors: {
-      contactRequired: "Please fill in all required contact fields.",
-      dateRequired: "Please add at least one preferred date.",
-      teamSizeRequired: "Please enter team size.",
-      childCountRequired: "Please enter number of children.",
-    },
-    companyLabel: "Company name *",
-    schoolLabel: "School / organization *",
-    companyPlaceholder: "e.g. Acme Corp",
-    schoolPlaceholder: "e.g. Springfield Elementary",
-    contactName: "Contact name *",
-    email: "Email *",
-    phone: "Phone",
-    teamSize: "Team size *",
-    childCount: "Number of children *",
-    ageRange: "Age range",
-    agePlaceholder: "e.g. 8–12",
-    preferredDate: "Preferred date *",
-    alternateDate: "Alternate date",
-    location: "Location *",
-    atOffice: "At our office",
-    atSchool: "At our school / venue",
-    dicezoneVenue: "DiceZone arranges a venue",
-    address: "Address or area",
-    addressPlaceholder: "City, neighborhood, or full address",
-    details: "Additional details",
-    reviewOrg: "Organization:",
-    reviewContact: "Contact:",
-    reviewTeam: "Team size:",
-    reviewChildren: "Children:",
-    reviewDates: "Dates:",
-    reviewLocation: "Location:",
-    reviewYourSite: "Your site",
-    reviewArranged: "DiceZone arranges venue",
-    reviewAddress: "Address:",
-    stepLabel: "Step",
-  },
-  rental: {
-    title: "Request rental",
-    priceNote: "· Stripe checkout coming soon",
-    startDate: "Start date *",
-    endDate: "End date *",
-    available: "Looks available — submit your inquiry to confirm.",
-    maybeUnavailable: "May be booked — you can still submit an inquiry.",
-    yourName: "Your name *",
-    submit: "Submit rental inquiry",
-  },
-  contactForm: {
-    thankYouBody:
-      "We received your {type} inquiry (ref: {ref}…). We'll be in touch within 1–2 business days.",
-    rental: "rental",
-    booking: "booking",
-    sentBack: "We'll get back to you soon.",
-    failedSend: "Failed to send message.",
-    name: "Name *",
-    subject: "Subject",
-    message: "Message *",
+    rentCta: "Rent this game",
   },
   notFound: {
     title: "Page not found",
@@ -426,6 +397,12 @@ export const en: Dictionary = {
     azul: {
       description:
         "Draft colorful tiles to create stunning mosaic patterns. Elegant, tactile, and satisfying for corporate icebreakers or family play.",
+    },
+    carcassonne: {
+      description: "A tile-placement game where you build a medieval landscape and score points by controlling cities, roads, and fields.",
+    },
+    collectives9: {
+      description: "A team-based game with fast communication, trivia, and creative challenges where players work together to score points.",
     },
   },
 };

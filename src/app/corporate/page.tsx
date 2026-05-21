@@ -33,8 +33,9 @@ export default async function CorporatePage() {
         title={d.corporate.heroTitle}
         description={d.corporate.heroDescription}
         variant="immersive"
+        className="dz-hero-corporate"
       >
-        <Link href="/corporate/book" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
+        <Link href="/contact" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
           {d.corporate.bookCta}
         </Link>
       </PageHero>

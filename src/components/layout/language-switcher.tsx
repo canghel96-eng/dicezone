@@ -51,8 +51,8 @@ export function LanguageSwitcher({
               onDark && "focus-visible:ring-offset-surface-dark",
               active
                 ? onDark
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "bg-primary text-primary-foreground shadow-sm"
+                  ? "bg-accent text-accent-foreground shadow-sm"
+                  : "bg-accent text-accent-foreground shadow-sm"
                 : onDark
                   ? "text-surface-dark-foreground/75 hover:bg-primary-foreground/10 hover:text-surface-dark-foreground"
                   : "text-muted-foreground hover:bg-card hover:text-foreground"

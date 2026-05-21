@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
   Dice5,
-  MessagesSquare,
   Users,
 } from "lucide-react";
 import { GameCard } from "@/components/games/game-card";
+import { ExperienceSection } from "@/components/home/experience-section";
 import { HubTile } from "@/components/home/hub-tile";
 import { PageHero } from "@/components/shared/page-hero";
 import { SectionHeader } from "@/components/shared/section-header";
@@ -20,7 +20,7 @@ import { formatRegion, getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
 import { getGames } from "@/lib/games";
 
-const OFFERING_HREFS = ["/corporate", "/kids", "/venue", "/rent"];
+const OFFERING_HREFS = ["/events", "/corporate", "/kids", "/venue", "/rent"];
 
 export default async function HomePage() {
   const locale = await getLocale();
@@ -37,7 +37,7 @@ export default async function HomePage() {
         accent={d.home.heroAccent}
         description={formatRegion(d.home.heroDescription, region)}
       >
-        <Link href="/corporate/book" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
+        <Link href="/contact" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
           {d.home.bookCorporate}
         </Link>
         <Link
@@ -64,6 +64,7 @@ export default async function HomePage() {
                 title={item.title}
                 description={item.description}
                 index={i}
+                className={i === 0 ? "md:col-span-2" : undefined}
               />
             ))}
           </Box>
@@ -82,16 +83,12 @@ export default async function HomePage() {
       </section>
 
       <section className="cozy-section">
-        <Box className="cozy-container max-w-3xl text-center">
-          <SectionHeader
-            eyebrow={d.home.experienceEyebrow}
-            title={d.home.experienceTitle}
-            centered
-          />
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            {d.home.experienceText}
-          </p>
-        </Box>
+        <ExperienceSection
+          eyebrow={d.home.experienceEyebrow}
+          title={d.home.experienceTitle}
+          text={d.home.experienceText}
+          imageAlt={d.images.groupPlaying}
+        />
       </section>
 
       <section className="cozy-section-alt">
@@ -139,7 +136,12 @@ export default async function HomePage() {
           </Box>
           <Box className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((game) => (
-              <GameCard key={game.slug} game={game} locale={locale} />
+              <GameCard
+                key={game.slug}
+                game={game}
+                locale={locale}
+                variant="featured"
+              />
             ))}
           </Box>
         </Box>
@@ -149,19 +151,13 @@ export default async function HomePage() {
         <Box className="cozy-container">
           <Box className="cozy-cta-band text-center">
             <Users className="relative mx-auto h-11 w-11 opacity-90" />
-            <h2 className="relative mt-4 font-serif text-2xl font-semibold sm:text-3xl">
+            <h2 className="relative mt-4 font-serif text-2xl font-semibold text-primary-foreground sm:text-3xl">
               {d.home.ctaTitle}
             </h2>
             <p className="relative mx-auto mt-3 max-w-xl text-base leading-relaxed opacity-95">
               {d.home.ctaText}
             </p>
             <Box className="relative mt-8 flex flex-wrap justify-center gap-3">
-              <Button asChild size="lg" variant="secondary" className="rounded-full font-bold uppercase tracking-wide">
-                <Link href="/corporate/book">
-                  <MessagesSquare className="mr-2 h-4 w-4" />
-                  {d.home.ctaBook}
-                </Link>
-              </Button>
               <Button
                 asChild
                 size="lg"

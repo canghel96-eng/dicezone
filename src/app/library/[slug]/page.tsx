@@ -1,10 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GameBoxArt } from "@/components/games/game-box-art";
-import { RentalForm } from "@/components/rental/rental-form";
+import { SocialContact } from "@/components/shared/social-contact";
 import { Badge } from "@/components/ui/badge";
 import { Box } from "@/components/ui/box";
-import { Button } from "@/components/ui/button";
 import { getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
 import { formatPrice, getGameBySlug, getGameSlugs } from "@/lib/games";
@@ -52,7 +50,7 @@ export default async function GameDetailPage({
               </Badge>
             ))}
           </Box>
-          <h1 className="font-serif text-3xl font-semibold sm:text-4xl">
+          <h1 className="font-serif text-3xl font-semibold text-primary sm:text-4xl">
             {game.title}
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
@@ -86,15 +84,18 @@ export default async function GameDetailPage({
             )}
           </ul>
 
-          {game.tags.includes("corporate") && (
-            <Button asChild className="mt-6 rounded-full" variant="outline">
-              <Link href="/corporate/book">{d.library.corporateUse}</Link>
-            </Button>
-          )}
-
           {rentable ? (
             <Box className="mt-8">
-              <RentalForm game={game} />
+              <SocialContact
+                headline={d.library.rentCta}
+                subtext={d.socialContact.subtext}
+                labels={{
+                  whatsapp: d.socialContact.whatsapp,
+                  instagram: d.socialContact.instagram,
+                  facebook: d.socialContact.facebook,
+                }}
+                compact
+              />
             </Box>
           ) : (
             <p className="mt-8 rounded-2xl bg-secondary/50 p-4 text-sm text-muted-foreground">

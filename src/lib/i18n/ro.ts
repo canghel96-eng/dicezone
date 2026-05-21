@@ -10,6 +10,7 @@ export const ro: Dictionary = {
     { href: "/corporate", label: "Companii" },
     { href: "/kids", label: "Copii" },
     { href: "/venue", label: "Locație" },
+    { href: "/events", label: "Evenimente" },
     { href: "/rent", label: "Închiriere" },
     { href: "/library", label: "Bibliotecă" },
     { href: "/about", label: "Despre noi" },
@@ -18,12 +19,6 @@ export const ro: Dictionary = {
   heroPill: "Jocuri de societate · Echipe · Familii",
   ui: {
     bookEvent: "Rezervă un eveniment",
-    back: "Înapoi",
-    continue: "Continuă",
-    submitInquiry: "Trimite solicitarea",
-    submitting: "Se trimite…",
-    sendMessage: "Trimite mesajul",
-    sending: "Se trimite…",
     viewAll: "Vezi tot",
     contactUs: "Contactează-ne",
     explore: "Explorează",
@@ -31,15 +26,9 @@ export const ro: Dictionary = {
     players: "jucători",
     rentFrom: "Închiriere de la",
     perDay: "/zi",
-    perDayWord: "pe zi",
-    thankYou: "Mulțumim!",
-    messageSent: "Mesaj trimis!",
     openMenu: "Deschide meniul",
     mainNav: "Principal",
     mobileNav: "Mobil",
-    loadingForm: "Se încarcă formularul…",
-    networkError: "Eroare de rețea. Încearcă din nou.",
-    somethingWrong: "Ceva nu a mers bine.",
     language: "Limbă",
     switchToRo: "Română",
     switchToEn: "English",
@@ -52,7 +41,6 @@ export const ro: Dictionary = {
     rentable: "de închiriat",
     "venue-only": "doar la locație",
   },
-  bookingSteps: ["Contact", "Detalii", "Locație", "Verificare"],
   siteRegion: "Bucuresti",
   images: {
     hero: "Prieteni care râd jucând jocuri de societate împreună",
@@ -69,6 +57,14 @@ export const ro: Dictionary = {
     copyrightEnd: "pentru cei care iubesc să joace împreună.",
     serving: "Deservim {region}",
   },
+  socialContact: {
+    headline: "Vrei să rezervi sau să afli mai multe?",
+    subtext:
+      "Scrie-ne direct pe WhatsApp, Instagram sau Facebook și îți răspundem cât mai rapid.",
+    whatsapp: "Scrie-ne pe WhatsApp",
+    instagram: "Mesaj pe Instagram",
+    facebook: "Mesaj pe Facebook",
+  },
   home: {
     heroTitle: "Jocuri de societate care aduc oamenii împreună",
     heroAccent:
@@ -82,6 +78,11 @@ export const ro: Dictionary = {
     offerSubtitle:
       "De la team building corporate la ateliere pentru copii, joc la locație parteneră și închirieri. O bibliotecă organizată, multe moduri de a juca.",
     offerings: [
+      {
+        title: "Evenimente publice",
+        description:
+          "Participă la seri de board games și sesiuni tematice deschise tuturor.",
+      },
       {
         title: "Team building corporate",
         description:
@@ -127,7 +128,6 @@ export const ro: Dictionary = {
     ctaTitle: "Planifici un team building sau un eveniment școlar?",
     ctaText:
       "Nu e nevoie de experiență cu jocurile. Noi aducem jocurile, facilitarea și atmosfera bună.",
-    ctaBook: "Rezervă eveniment corporate",
     galleryEyebrow: "În jurul mesei",
     galleryTitle: "Momente reale, conexiuni reale",
     gallerySubtitle:
@@ -198,11 +198,6 @@ export const ro: Dictionary = {
     experienceTitle: "Echipele care joacă împreună, lucrează mai bine împreună",
     experienceText:
       "Facilitatorii noștri ghidează sala astfel încât toată lumea să participe — inclusiv cei introvertiți. Fără icebreakere stânjenitoare, doar distracție structurată care construiește relații reale.",
-    bookMetaTitle: "Rezervă eveniment corporate",
-    bookHeroTitle: "Rezervă un eveniment corporate",
-    bookHeroDescription:
-      "Spune-ne despre echipa ta și datele preferate. Revenim cu o ofertă — plata online cu avans prin Stripe, în curând.",
-    bookFormTitle: "Solicitare team building corporate",
   },
   kids: {
     metaTitle: "Educație pentru copii",
@@ -228,11 +223,6 @@ export const ro: Dictionary = {
     experienceTitle: "Învățare prin joc, împreună",
     experienceText:
       "Copiii exersează rândul, munca în echipă și gândirea creativă fără să simtă că e o lecție. Părinții și profesorii adoră să vadă încrederea crescând în jurul mesei.",
-    bookMetaTitle: "Rezervă eveniment pentru copii",
-    bookHeroTitle: "Rezervă o sesiune educativă",
-    bookHeroDescription:
-      "Detalii despre grup și datele preferate. Confirmăm disponibilitatea și prețul prin email.",
-    bookFormTitle: "Solicitare eveniment educativ pentru copii",
   },
   venue: {
     metaTitle: "Locație parteneră",
@@ -244,11 +234,55 @@ export const ro: Dictionary = {
       "Semnăm prima locație parteneră în {region}. Vrei să găzduiești o bibliotecă de jocuri la restaurantul tău sau să fii anunțat la lansare?",
     waitlist: "Înscrie-te pe lista de așteptare",
   },
+  publicEvents: {
+    metaTitle: "Evenimente publice",
+    heroTitle: "Evenimente publice cu jocuri de societate",
+    heroDescription:
+      "Seri de jocuri deschise tuturor: vii singur sau cu prietenii, alegem mesele potrivite și te ajutăm să intri rapid în joc.",
+    listEyebrow: "Calendar DiceZone",
+    listTitle: "Următoarele evenimente",
+    listSubtitle:
+      "Rezervă-ți locul la una dintre sesiunile planificate. Butonul de bilet te trimite către formularul Google de înscriere.",
+    bookTicket: "Rezervă bilet",
+    eventDetails: "Detalii eveniment",
+    events: [
+      {
+        title: "Seară de jocuri pentru începători",
+        date: "Vineri, 14 iunie",
+        time: "18:30–21:30",
+        location: "Bucuresti · locația se confirmă după înscriere",
+        price: "30 lei / persoană",
+        spots: "24 locuri disponibile",
+        description:
+          "O seară relaxată cu jocuri ușor de învățat, mese ghidate și recomandări pentru grupuri noi.",
+      },
+      {
+        title: "Seară de deducție socială",
+        date: "Sâmbătă, 22 iunie",
+        time: "19:00–22:30",
+        location: "Bucuresti · locația se confirmă după înscriere",
+        price: "35 lei / persoană",
+        spots: "18 locuri disponibile",
+        description:
+          "Jocuri de bluff, deducție și discuții aprinse pentru cei care iubesc rolurile ascunse.",
+      },
+      {
+        title: "After-amiaza jocurilor de familie",
+        date: "Duminică, 30 iunie",
+        time: "15:00–18:00",
+        location: "Bucuresti · locația se confirmă după înscriere",
+        price: "25 lei / persoană",
+        spots: "20 locuri disponibile",
+        description:
+          "Jocuri potrivite pentru copii și adulți, cu reguli explicate pe loc și atmosferă prietenoasă.",
+      },
+    ],
+  },
   rent: {
     metaTitle: "Închiriere jocuri",
     heroTitle: "Închiriază jocuri din biblioteca noastră",
     heroDescription:
-      "Ia acasă un titlu pentru câteva zile. Tarif zilnic simplu — plata online cu Stripe, în curând.",
+      "Ia acasă un titlu pentru câteva zile. Tarif zilnic simplu — scrie-ne pe WhatsApp pentru disponibilitate și ridicare.",
     browseCta: "Explorează biblioteca",
     steps: [
       {
@@ -256,12 +290,12 @@ export const ro: Dictionary = {
         text: "Din catalogul nostru de jocuri de familie și strategie.",
       },
       {
-        title: "Selectează datele",
-        text: "Verifică disponibilitatea și trimite o solicitare de închiriere.",
+        title: "Scrie-ne",
+        text: "Trimite-ne un mesaj pe WhatsApp, Instagram sau Facebook pentru disponibilitate.",
       },
       {
         title: "Ridicare și returnare",
-        text: "Confirmăm prin email locul de ridicare și instrucțiunile de returnare.",
+        text: "Confirmăm prin mesaj locul de ridicare și instrucțiunile de returnare.",
       },
     ],
   },
@@ -291,13 +325,8 @@ export const ro: Dictionary = {
     metaTitle: "Contact",
     heroTitle: "Contactează-ne",
     heroDescription:
-      "Întrebări despre evenimente, închirieri sau parteneriate? Deservim {region} și răspundem în 1–2 zile lucrătoare.",
-    writeTitle: "Scrie-ne",
+      "Întrebări despre evenimente, închirieri sau parteneriate? Deservim {region} și răspundem cât mai rapid.",
     emailLabel: "Email:",
-    formHint: "Pentru rezervări mai rapide, folosește formularele dedicate pentru",
-    formHintCorporate: "companii",
-    formHintKids: "copii",
-    formHintAnd: "sau",
   },
   library: {
     metaTitle: "Bibliotecă de jocuri",
@@ -320,65 +349,7 @@ export const ro: Dictionary = {
     rentalLabel: "Închiriere:",
     corporateUse: "Folosește la eveniment corporate",
     venueOnly: "Acest titlu este disponibil doar în cadrul evenimentelor facilitate.",
-  },
-  booking: {
-    errors: {
-      contactRequired: "Completează toate câmpurile obligatorii de contact.",
-      dateRequired: "Adaugă cel puțin o dată preferată.",
-      teamSizeRequired: "Introdu mărimea echipei.",
-      childCountRequired: "Introdu numărul de copii.",
-    },
-    companyLabel: "Nume companie *",
-    schoolLabel: "Școală / organizație *",
-    companyPlaceholder: "Ex. Acme SRL",
-    schoolPlaceholder: "Ex. Școala Nr. 1",
-    contactName: "Nume contact *",
-    email: "Email *",
-    phone: "Telefon",
-    teamSize: "Mărime echipă *",
-    childCount: "Număr copii *",
-    ageRange: "Interval de vârstă",
-    agePlaceholder: "ex. 8–12 ani",
-    preferredDate: "Dată preferată *",
-    alternateDate: "Dată alternativă",
-    location: "Locație *",
-    atOffice: "La biroul nostru",
-    atSchool: "La școală / locația noastră",
-    dicezoneVenue: "DiceZone aranjează o locație",
-    address: "Adresă sau zonă",
-    addressPlaceholder: "Oraș, cartier sau adresă completă",
-    details: "Detalii suplimentare",
-    reviewOrg: "Organizație:",
-    reviewContact: "Contact:",
-    reviewTeam: "Mărime echipă:",
-    reviewChildren: "Copii:",
-    reviewDates: "Date:",
-    reviewLocation: "Locație:",
-    reviewYourSite: "La locația ta",
-    reviewArranged: "DiceZone aranjează locația",
-    reviewAddress: "Adresă:",
-    stepLabel: "Pasul",
-  },
-  rental: {
-    title: "Solicită închiriere",
-    priceNote: "· Plată Stripe, în curând",
-    startDate: "Data început *",
-    endDate: "Data sfârșit *",
-    available: "Pare disponibil — trimite solicitarea pentru confirmare.",
-    maybeUnavailable: "Posibil indisponibil — poți trimite oricum o solicitare.",
-    yourName: "Numele tău *",
-    submit: "Trimite solicitarea de închiriere",
-  },
-  contactForm: {
-    thankYouBody:
-      "Am primit solicitarea ta de {type} (ref: {ref}…). Revenim în 1–2 zile lucrătoare.",
-    rental: "închiriere",
-    booking: "rezervare",
-    sentBack: "Revenim în curând.",
-    failedSend: "Nu am putut trimite mesajul.",
-    name: "Nume *",
-    subject: "Subiect",
-    message: "Mesaj *",
+    rentCta: "Închiriază acest joc",
   },
   notFound: {
     title: "Pagina nu a fost găsită",
@@ -397,7 +368,7 @@ export const ro: Dictionary = {
     },
     wavelength: {
       description:
-        "Un duo „psihic” dă indicii pe un spectru, iar colegii ghicesc poziția. Dezbatări amuzante și perspective (aliniate sau nu).",
+        "Un duo \u201epsihic\u201d dă indicii pe un spectru, iar colegii ghicesc poziția. Dezbatări amuzante și perspective (aliniate sau nu).",
     },
     decrypto: {
       description:
@@ -426,6 +397,12 @@ export const ro: Dictionary = {
     azul: {
       description:
         "Alege plăci colorate pentru mozaicuri spectaculoase. Elegant, tactil și satisfăcător la evenimente corporate sau în familie.",
+    },
+    carcassonne: {
+      description: "Un joc de plasare de plăci în care construiești un tărâm medieval și câștigi puncte prin controlul orașelor, drumurilor și câmpurilor.",
+    },
+    collectives9: {
+      description: "Un joc de echipă cu provocări rapide de comunicare, cultură generală și creativitate în care jucătorii colaborează pentru a câștiga puncte.",
     },
   },
 };

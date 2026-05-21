@@ -26,19 +26,23 @@ export function PageHero({
       className={cn(
         "relative overflow-hidden border-b",
         immersive
-          ? "dz-hero-immersive flex min-h-[32rem] items-center border-primary-foreground/10 py-20 sm:py-28 lg:py-32"
-          : "cozy-hero-pattern border-border/60 bg-gradient-to-b from-cozy-warm/80 via-secondary/30 to-background py-14 sm:py-20",
+          ? "dz-hero-immersive flex min-h-[32rem] items-center border-primary-foreground/10 pb-20 pt-32 sm:pb-28 sm:pt-40 lg:pb-32 lg:pt-44"
+          : "dz-page-hero border-border/60 py-14 sm:py-20",
         className
       )}
     >
       {!immersive && (
         <>
           <Box
-            className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/25 blur-3xl"
+            className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-accent-bright/25 blur-3xl"
             aria-hidden
           />
           <Box
-            className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl"
+            className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-secondary/55 blur-3xl"
+            aria-hidden
+          />
+          <Box
+            className="pointer-events-none absolute left-1/2 top-8 h-40 w-40 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
             aria-hidden
           />
         </>
@@ -59,7 +63,7 @@ export function PageHero({
           className={cn(
             immersive
               ? "dz-hero-title mx-auto max-w-4xl"
-              : "max-w-3xl font-serif text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl"
+              : "dz-page-hero-title max-w-3xl"
           )}
         >
           {title}
@@ -73,7 +77,7 @@ export function PageHero({
               "max-w-2xl text-lg leading-relaxed",
               immersive
                 ? "dz-hero-description mx-auto mt-6"
-                : "mt-5 text-muted-foreground"
+                : "dz-page-hero-description mt-5"
             )}
           >
             {description}

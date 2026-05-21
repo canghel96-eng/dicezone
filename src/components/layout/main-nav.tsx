@@ -1,25 +1,22 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { cn } from "@/lib/utils";
-import type { Locale } from "@/lib/i18n";
 import type { NavLink } from "@/lib/i18n/types";
 
 export function MainNav({
   className,
   links,
   ariaLabel,
-  locale,
-  languageLabels,
+  children,
   onDark = true,
 }: {
   className?: string;
   links: NavLink[];
   ariaLabel: string;
-  locale: Locale;
-  languageLabels: { language: string; ro: string; en: string };
+  children?: ReactNode;
   onDark?: boolean;
 }) {
   const pathname = usePathname();
@@ -46,12 +43,7 @@ export function MainNav({
           </Link>
         );
       })}
-      <LanguageSwitcher
-        locale={locale}
-        labels={languageLabels}
-        onDark={onDark}
-        className="ml-1"
-      />
+      {children}
     </nav>
   );
 }

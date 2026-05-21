@@ -17,12 +17,6 @@ export type Dictionary = {
   heroPill: string;
   ui: {
     bookEvent: string;
-    back: string;
-    continue: string;
-    submitInquiry: string;
-    submitting: string;
-    sendMessage: string;
-    sending: string;
     viewAll: string;
     contactUs: string;
     explore: string;
@@ -30,21 +24,14 @@ export type Dictionary = {
     players: string;
     rentFrom: string;
     perDay: string;
-    perDayWord: string;
-    thankYou: string;
-    messageSent: string;
     openMenu: string;
     mainNav: string;
     mobileNav: string;
-    loadingForm: string;
-    networkError: string;
-    somethingWrong: string;
     language: string;
     switchToRo: string;
     switchToEn: string;
   };
   tags: Record<GameTag, string>;
-  bookingSteps: [string, string, string, string];
   siteRegion: string;
   images: {
     hero: string;
@@ -59,6 +46,13 @@ export type Dictionary = {
     copyright: string;
     copyrightEnd: string;
     serving: string;
+  };
+  socialContact: {
+    headline: string;
+    subtext: string;
+    whatsapp: string;
+    instagram: string;
+    facebook: string;
   };
   home: {
     heroTitle: string;
@@ -80,7 +74,6 @@ export type Dictionary = {
     featuredSubtitle: string;
     ctaTitle: string;
     ctaText: string;
-    ctaBook: string;
     galleryEyebrow: string;
     galleryTitle: string;
     gallerySubtitle: string;
@@ -111,10 +104,6 @@ export type Dictionary = {
     gamesTitle: string;
     experienceTitle: string;
     experienceText: string;
-    bookMetaTitle: string;
-    bookHeroTitle: string;
-    bookHeroDescription: string;
-    bookFormTitle: string;
   };
   kids: {
     metaTitle: string;
@@ -125,10 +114,6 @@ export type Dictionary = {
     gamesTitle: string;
     experienceTitle: string;
     experienceText: string;
-    bookMetaTitle: string;
-    bookHeroTitle: string;
-    bookHeroDescription: string;
-    bookFormTitle: string;
   };
   venue: {
     metaTitle: string;
@@ -137,6 +122,25 @@ export type Dictionary = {
     comingTitle: string;
     comingText: string;
     waitlist: string;
+  };
+  publicEvents: {
+    metaTitle: string;
+    heroTitle: string;
+    heroDescription: string;
+    listEyebrow: string;
+    listTitle: string;
+    listSubtitle: string;
+    bookTicket: string;
+    eventDetails: string;
+    events: {
+      title: string;
+      date: string;
+      time: string;
+      location: string;
+      price: string;
+      spots: string;
+      description: string;
+    }[];
   };
   rent: {
     metaTitle: string;
@@ -161,12 +165,7 @@ export type Dictionary = {
     metaTitle: string;
     heroTitle: string;
     heroDescription: string;
-    writeTitle: string;
     emailLabel: string;
-    formHint: string;
-    formHintCorporate: string;
-    formHintKids: string;
-    formHintAnd: string;
   };
   library: {
     metaTitle: string;
@@ -181,64 +180,7 @@ export type Dictionary = {
     rentalLabel: string;
     corporateUse: string;
     venueOnly: string;
-  };
-  booking: {
-    errors: {
-      contactRequired: string;
-      dateRequired: string;
-      teamSizeRequired: string;
-      childCountRequired: string;
-    };
-    companyLabel: string;
-    schoolLabel: string;
-    companyPlaceholder: string;
-    schoolPlaceholder: string;
-    contactName: string;
-    email: string;
-    phone: string;
-    teamSize: string;
-    childCount: string;
-    ageRange: string;
-    agePlaceholder: string;
-    preferredDate: string;
-    alternateDate: string;
-    location: string;
-    atOffice: string;
-    atSchool: string;
-    dicezoneVenue: string;
-    address: string;
-    addressPlaceholder: string;
-    details: string;
-    reviewOrg: string;
-    reviewContact: string;
-    reviewTeam: string;
-    reviewChildren: string;
-    reviewDates: string;
-    reviewLocation: string;
-    reviewYourSite: string;
-    reviewArranged: string;
-    reviewAddress: string;
-    stepLabel: string;
-  };
-  rental: {
-    title: string;
-    priceNote: string;
-    startDate: string;
-    endDate: string;
-    available: string;
-    maybeUnavailable: string;
-    yourName: string;
-    submit: string;
-  };
-  contactForm: {
-    thankYouBody: string;
-    rental: string;
-    booking: string;
-    sentBack: string;
-    failedSend: string;
-    name: string;
-    subject: string;
-    message: string;
+    rentCta: string;
   };
   notFound: {
     title: string;

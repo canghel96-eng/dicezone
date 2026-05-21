@@ -32,8 +32,9 @@ export default async function KidsPage() {
         title={d.kids.heroTitle}
         description={d.kids.heroDescription}
         variant="immersive"
+        className="dz-hero-kids"
       >
-        <Link href="/kids/book" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
+        <Link href="/contact" className="dz-btn-hero inline-flex h-12 items-center px-8 text-sm">
           {d.kids.bookCta}
         </Link>
       </PageHero>

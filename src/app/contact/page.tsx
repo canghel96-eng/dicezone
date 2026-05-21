@@ -1,7 +1,5 @@
-import { Suspense } from "react";
-import Link from "next/link";
-import { ContactForm } from "@/components/contact/contact-form";
 import { PageHero } from "@/components/shared/page-hero";
+import { SocialContact } from "@/components/shared/social-contact";
 import { Box } from "@/components/ui/box";
 import { formatRegion, getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
@@ -24,41 +22,27 @@ export default async function ContactPage() {
         description={formatRegion(d.contact.heroDescription, d.siteRegion)}
       />
 
-      <section className="cozy-section-alt pb-24 pt-2">
-        <Box className="cozy-container grid max-w-4xl gap-12 lg:grid-cols-2">
-          <Box>
-            <h2 className="font-serif text-xl font-semibold">
-              {d.contact.writeTitle}
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              {d.contact.emailLabel}{" "}
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="text-primary hover:underline"
-              >
-                {CONTACT_EMAIL}
-              </a>
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              {d.contact.formHint}{" "}
-              <Link href="/corporate/book" className="text-primary hover:underline">
-                {d.contact.formHintCorporate}
-              </Link>{" "}
-              {d.contact.formHintAnd}{" "}
-              <Link href="/kids/book" className="text-primary hover:underline">
-                {d.contact.formHintKids}
-              </Link>
-              .
-            </p>
-          </Box>
+      <section className="cozy-section pb-24 pt-2">
+        <Box className="cozy-container flex flex-col items-center gap-10">
+          <SocialContact
+            headline={d.socialContact.headline}
+            subtext={d.socialContact.subtext}
+            labels={{
+              whatsapp: d.socialContact.whatsapp,
+              instagram: d.socialContact.instagram,
+              facebook: d.socialContact.facebook,
+            }}
+          />
 
-          <Suspense
-            fallback={
-              <p className="text-muted-foreground">{d.ui.loadingForm}</p>
-            }
-          >
-            <ContactForm />
-          </Suspense>
+          <p className="text-sm text-muted-foreground">
+            {d.contact.emailLabel}{" "}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="font-semibold text-primary hover:underline"
+            >
+              {CONTACT_EMAIL}
+            </a>
+          </p>
         </Box>
       </section>
     </>

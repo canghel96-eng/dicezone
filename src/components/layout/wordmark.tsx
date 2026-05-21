@@ -22,8 +22,8 @@ export function Wordmark({
         className={cn(
           "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br shadow-md transition-transform group-hover:scale-105",
           onDark
-            ? "from-primary to-primary/80 text-primary-foreground"
-            : "from-primary to-primary/80 text-primary-foreground shadow-[var(--shadow-cozy)]"
+            ? "from-accent to-[#cf4f3f] text-accent-foreground"
+            : "from-accent to-[#cf4f3f] text-accent-foreground shadow-[var(--shadow-cozy)]"
         )}
       >
         <Dice5 className="h-5 w-5" strokeWidth={2.25} />
@@ -31,7 +31,7 @@ export function Wordmark({
       <span
         className={cn(
           "font-serif text-xl font-semibold tracking-tight",
-          onDark ? "text-surface-dark-foreground" : "text-foreground"
+          onDark ? "text-surface-dark-foreground" : "text-primary"
         )}
       >
         {SITE_NAME}

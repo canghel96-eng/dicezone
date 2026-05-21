@@ -96,6 +96,24 @@ const GAME_BASE = [
     rentalPricePerDayCents: 1100,
     featured: true,
   },
+  {
+    slug: "carcassonne",
+    title: "Carcassonne",
+    playerCount: "2–5",
+    duration: "30–45 min",
+    ageMin: 7,
+    tags: ["kids", "rentable"] as GameTag[],
+    rentalPricePerDayCents: 1000,
+  },
+  {
+    slug: "collectives9",
+    title: "Collectives 9",
+    playerCount: "2–16",
+    duration: "40–90 min",
+    ageMin: 12,
+    tags: ["corporate", "kids", "rentable"] as GameTag[],
+    rentalPricePerDayCents: 1200,
+  },
 ] as const;
 
 export function getGames(locale: Locale): Game[] {

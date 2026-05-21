@@ -14,6 +14,9 @@ const TILE_THEMES = [
     title: "text-rose-950",
     body: "text-rose-950/70",
     image: "/images/teambuilding.png",
+    imagePosition: "center",
+    overlay:
+      "linear-gradient(135deg, rgb(232 93 74 / 0.68), rgb(30 42 90 / 0.5))",
   },
   {
     bar: "bg-accent-bright",
@@ -22,6 +25,9 @@ const TILE_THEMES = [
     title: "text-amber-950",
     body: "text-amber-950/70",
     image: "/images/kids.png",
+    imagePosition: "center",
+    overlay:
+      "linear-gradient(135deg, rgb(230 180 75 / 0.56), rgb(30 42 90 / 0.56))",
   },
   {
     bar: "bg-cozy-sage",
@@ -30,6 +36,9 @@ const TILE_THEMES = [
     title: "text-emerald-950",
     body: "text-emerald-950/70",
     image: "/images/coffeshop.png",
+    imagePosition: "center",
+    overlay:
+      "linear-gradient(135deg, rgb(111 154 115 / 0.62), rgb(30 42 90 / 0.54))",
   },
   {
     bar: "bg-secondary",
@@ -38,6 +47,9 @@ const TILE_THEMES = [
     title: "text-sky-950",
     body: "text-sky-950/70",
     image: "/images/library.png",
+    imagePosition: "center",
+    overlay:
+      "linear-gradient(135deg, rgb(30 42 90 / 0.68), rgb(232 93 74 / 0.42))",
   },
 ] as const;
 
@@ -46,11 +58,13 @@ export function HubTile({
   title,
   description,
   index,
+  className,
 }: {
   href: string;
   title: string;
   description: string;
   index: number;
+  className?: string;
 }) {
   const theme = TILE_THEMES[index % TILE_THEMES.length];
   const hasImage = Boolean(theme.image);
@@ -60,8 +74,8 @@ export function HubTile({
     "--reveal-delay": `${index * 90}ms`,
     ...(theme.image
       ? {
-          backgroundImage: `linear-gradient(oklch(0.12 0.05 285 / 0.45), oklch(0.12 0.05 285 / 0.58)), url("${theme.image}")`,
-          backgroundPosition: "center",
+          backgroundImage: `${theme.overlay}, url("${theme.image}")`,
+          backgroundPosition: theme.imagePosition,
           backgroundSize: "cover",
         }
       : {}),
@@ -87,12 +101,18 @@ export function HubTile({
   }, []);
 
   return (
-    <Link href={href} className="group block h-full min-w-0">
+    <Link
+      href={href}
+      className={cn(
+        "group block h-full min-w-0 rounded-2xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/35",
+        className
+      )}
+    >
       <article
         ref={tileRef}
         style={tileStyle}
         className={cn(
-          "dz-hub-tile dz-hub-tile-reveal relative flex h-full min-h-[24rem] flex-col items-center justify-center overflow-hidden p-5 sm:p-6 transition-all duration-300 group-hover:-translate-y-1",
+          "dz-hub-tile dz-hub-tile-reveal relative flex h-full min-h-[18rem] flex-col items-center justify-center overflow-hidden p-5 transition-all duration-300 group-hover:-translate-y-1 sm:min-h-[20rem] sm:p-6",
           isVisible && "dz-hub-tile-visible",
           theme.surface
         )}
@@ -100,11 +120,11 @@ export function HubTile({
         <span className={cn("absolute inset-x-0 top-0 h-1.5", theme.bar)} />
         <Box
           className={cn(
-            "dz-hub-tile-panel relative z-[1] rounded-xl p-4 text-center",
+            "dz-hub-tile-panel relative z-[1] rounded-2xl p-5 text-center sm:p-6",
             hasImage ? "dz-hub-tile-image-panel backdrop-blur-[1px]" : theme.panel
           )}
         >
-          <Box className="mx-auto my-auto flex max-w-[13rem] flex-col items-center justify-center text-center">
+          <Box className="mx-auto my-auto flex max-w-md flex-col items-center justify-center text-center">
             <h3
               className={cn(
                 "dz-hub-tile-title font-serif text-2xl font-bold leading-snug",
