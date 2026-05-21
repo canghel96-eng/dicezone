@@ -1,8 +1,5 @@
 import Link from "next/link";
-import {
-  Dice5,
-  Users,
-} from "lucide-react";
+import { Users } from "lucide-react";
 import { GameCard } from "@/components/games/game-card";
 import { ExperienceSection } from "@/components/home/experience-section";
 import { HubTile } from "@/components/home/hub-tile";

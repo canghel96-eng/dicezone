@@ -17,7 +17,7 @@ export async function Footer() {
       <Box className="cozy-container py-14">
         <Box className="grid gap-10 md:grid-cols-3">
           <Box className="space-y-4">
-            <Wordmark size="md" />
+            <Wordmark onDark />
             <p className="text-sm leading-relaxed text-surface-dark-foreground/70">
               {formatRegion(d.footer.blurb, region)}
             </p>

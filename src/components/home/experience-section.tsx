@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Box } from "@/components/ui/box";
@@ -39,7 +40,7 @@ export function ExperienceSection({
   }, []);
 
   return (
-    <Box
+    <div
       ref={sectionRef}
       className={cn(
         "dz-experience-meet cozy-container grid items-center gap-10 lg:grid-cols-2 lg:gap-14",
@@ -47,9 +48,11 @@ export function ExperienceSection({
       )}
     >
       <Box className="dz-experience-meet-image aspect-[4/3] overflow-hidden rounded-3xl border border-border/80 bg-card shadow-[var(--shadow-cozy-lg)]">
-        <img
+        <Image
           src="/images/AtTheTable.png"
           alt={imageAlt}
+          width={1200}
+          height={900}
           className="h-full w-full object-cover object-center"
         />
       </Box>
@@ -60,6 +63,6 @@ export function ExperienceSection({
           {text}
         </p>
       </Box>
-    </Box>
+    </div>
   );
 }
