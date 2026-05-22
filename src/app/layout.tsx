@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Lora, Nunito } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { SiteShell } from "@/components/layout/site-shell";
 import { LocaleProvider } from "@/components/providers/locale-provider";
 import { getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
@@ -43,9 +44,9 @@ export default async function RootLayout({
     <html lang={locale} className={`${sans.variable} ${serif.variable}`}>
       <body className="min-h-screen font-sans text-foreground">
         <LocaleProvider locale={locale}>
-          <Header />
-          <main className="min-h-[calc(100vh-8rem)]">{children}</main>
-          <Footer />
+          <SiteShell header={<Header />} footer={<Footer />}>
+            {children}
+          </SiteShell>
         </LocaleProvider>
       </body>
     </html>
