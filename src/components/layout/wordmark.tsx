@@ -30,9 +30,10 @@ export function Wordmark({
       </span>
       <span
         className={cn(
-          "font-serif text-xl font-semibold tracking-tight",
+          "text-2xl tracking-wide",
           onDark ? "text-surface-dark-foreground" : "text-primary"
         )}
+        style={{ fontFamily: "var(--font-display)" }}
       >
         {SITE_NAME}
       </span>

@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Zabisuka";
+  src: url("/fonts/Zabisuka.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -29,40 +37,41 @@
   --color-accent-bright: var(--accent-bright);
   --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+  --font-display: "Zabisuka", var(--font-lora), ui-serif, Georgia, serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 6px);
-  --shadow-cozy: 0 10px 30px -18px rgb(30 42 90 / 0.35);
-  --shadow-cozy-lg: 0 22px 54px -28px rgb(30 42 90 / 0.42);
+  --shadow-cozy: 0 10px 30px -18px rgb(43 74 54 / 0.32);
+  --shadow-cozy-lg: 0 22px 54px -28px rgb(43 74 54 / 0.38);
 }
 
-/* Warm Espresso palette: dark roast, deep red, antique gold, aged parchment, olive */
+/* Forest & Gold palette: deep forest green, antique gold, sage, linen */
 :root {
   --radius: 1rem;
-  --background: #f6f0e4;
-  --foreground: #4d3d2d;
-  --card: #ede4d0;
-  --card-foreground: #4d3d2d;
-  --popover: #f6f0e4;
-  --popover-foreground: #4d3d2d;
-  --primary: #3d1f10;
-  --primary-foreground: #f6f0e4;
-  --secondary: #c9960c;
-  --secondary-foreground: #3d1f10;
-  --muted: #ede4d0;
-  --muted-foreground: #7a6a55;
-  --accent: #c0452b;
-  --accent-foreground: #fff8f0;
-  --cozy-warm: #c9960c;
-  --cozy-sage: #7a8c6e;
-  --surface-dark: #2a1208;
-  --surface-dark-foreground: #f6f0e4;
-  --accent-bright: #c9960c;
-  --destructive: #8f2e18;
-  --border: #d5c9b0;
-  --input: #cfc3a5;
-  --ring: #c0452b;
+  --background: #f4f1e8;
+  --foreground: #3a4e38;
+  --card: #ece8d8;
+  --card-foreground: #3a4e38;
+  --popover: #f4f1e8;
+  --popover-foreground: #3a4e38;
+  --primary: #2b4a36;
+  --primary-foreground: #f4f1e8;
+  --secondary: #8fbe9a;
+  --secondary-foreground: #2b4a36;
+  --muted: #ece8d8;
+  --muted-foreground: #6b7c65;
+  --accent: #c8883a;
+  --accent-foreground: #1e2d1a;
+  --cozy-warm: #c8883a;
+  --cozy-sage: #6b9a72;
+  --surface-dark: #1e3328;
+  --surface-dark-foreground: #f4f1e8;
+  --accent-bright: #c8883a;
+  --destructive: #b94738;
+  --border: #d4cebc;
+  --input: #c8c0aa;
+  --ring: #c8883a;
 }
 
 @layer base {
@@ -79,17 +88,17 @@
     background-image:
       radial-gradient(
         ellipse 120% 80% at 50% -20%,
-        rgb(201 150 12 / 0.14),
+        rgb(200 136 58 / 0.14),
         transparent 55%
       ),
       radial-gradient(
         circle at 100% 50%,
-        rgb(122 140 110 / 0.11),
+        rgb(107 154 114 / 0.12),
         transparent 40%
       ),
       radial-gradient(
         circle at 0% 80%,
-        rgb(192 69 43 / 0.09),
+        rgb(43 74 54 / 0.08),
         transparent 35%
       );
     background-attachment: fixed;
@@ -165,7 +174,7 @@
     @apply pointer-events-none absolute inset-0 opacity-30;
     background-image: radial-gradient(
       circle at 20% 50%,
-      rgb(246 240 228 / 0.18),
+      rgb(244 241 232 / 0.18),
       transparent 50%
     );
   }
@@ -174,7 +183,7 @@
     background-image:
       radial-gradient(
         circle at 1px 1px,
-        rgb(61 31 16 / 0.06) 1px,
+        rgb(43 74 54 / 0.06) 1px,
         transparent 0
       );
     background-size: 24px 24px;
@@ -184,15 +193,15 @@
     background:
       linear-gradient(
         135deg,
-        #f6f0e4 0%,
-        #ede4d0 48%,
-        rgb(122 140 110 / 0.18) 100%
+        #f4f1e8 0%,
+        #ece8d8 48%,
+        rgb(107 154 114 / 0.18) 100%
       );
   }
 
   .dz-page-hero::before {
     content: "";
-    @apply pointer-events-none absolute inset-x-4 bottom-0 top-6 rounded-[2rem] border border-white/60 bg-white/35 shadow-[0_24px_80px_-56px_rgb(61_31_16_/_0.4)] backdrop-blur-[2px] sm:inset-x-8 lg:inset-x-[max(2rem,calc((100vw-72rem)/2))];
+    @apply pointer-events-none absolute inset-x-4 bottom-0 top-6 rounded-[2rem] border border-white/60 bg-white/35 shadow-[0_24px_80px_-56px_rgb(43_74_54_/_0.38)] backdrop-blur-[2px] sm:inset-x-8 lg:inset-x-[max(2rem,calc((100vw-72rem)/2))];
   }
 
   .dz-page-hero::after {
@@ -201,12 +210,12 @@
     background:
       radial-gradient(
         ellipse 45% 55% at 12% 70%,
-        rgb(201 150 12 / 0.2),
+        rgb(200 136 58 / 0.18),
         transparent 70%
       ),
       radial-gradient(
         ellipse 45% 60% at 88% 20%,
-        rgb(192 69 43 / 0.11),
+        rgb(43 74 54 / 0.12),
         transparent 70%
       );
   }
@@ -230,26 +239,26 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(42 18 8 / 0.35) 0%,
-        rgb(42 18 8 / 0.55) 55%,
-        rgb(42 18 8 / 0.72) 100%
+        rgb(30 51 40 / 0.35) 0%,
+        rgb(30 51 40 / 0.55) 55%,
+        rgb(30 51 40 / 0.72) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(192 69 43 / 0.22),
+        rgb(200 136 58 / 0.22),
         transparent 60%
       ),
       radial-gradient(
         circle at 85% 80%,
-        rgb(201 150 12 / 0.16),
+        rgb(107 154 114 / 0.18),
         transparent 45%
       ),
       url("/images/homepage.webp"),
       linear-gradient(
         165deg,
-        #2a1208 0%,
-        #3d1f10 45%,
-        #1e0c06 100%
+        #1e3328 0%,
+        #2b4a36 45%,
+        #162a1e 100%
       );
     background-position: center, center top, 85% 80%, center, center;
     background-repeat: no-repeat;
@@ -265,21 +274,21 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(42 18 8 / 0.40) 0%,
-        rgb(42 18 8 / 0.58) 55%,
-        rgb(42 18 8 / 0.74) 100%
+        rgb(30 51 40 / 0.40) 0%,
+        rgb(30 51 40 / 0.58) 55%,
+        rgb(30 51 40 / 0.74) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(192 69 43 / 0.2),
+        rgb(200 136 58 / 0.2),
         transparent 60%
       ),
       url("/images/teambuilding.webp"),
       linear-gradient(
         165deg,
-        #2a1208 0%,
-        #3d1f10 45%,
-        #1e0c06 100%
+        #1e3328 0%,
+        #2b4a36 45%,
+        #162a1e 100%
       );
     background-position: center, center top, center, center;
     background-size: cover, cover, cover, cover;
@@ -289,26 +298,26 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(42 18 8 / 0.30) 0%,
-        rgb(42 18 8 / 0.50) 55%,
-        rgb(42 18 8 / 0.68) 100%
+        rgb(30 51 40 / 0.30) 0%,
+        rgb(30 51 40 / 0.50) 55%,
+        rgb(30 51 40 / 0.68) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(201 150 12 / 0.28),
+        rgb(200 136 58 / 0.28),
         transparent 60%
       ),
       radial-gradient(
         circle at 80% 85%,
-        rgb(122 140 110 / 0.18),
+        rgb(107 154 114 / 0.18),
         transparent 45%
       ),
       url("/images/kids.webp"),
       linear-gradient(
         165deg,
-        #2a1208 0%,
-        #3d1f10 45%,
-        #1e0c06 100%
+        #1e3328 0%,
+        #2b4a36 45%,
+        #162a1e 100%
       );
     background-position: center, center top, 80% 85%, center top, center;
     background-size: cover, cover, cover, cover, cover;
@@ -389,38 +398,38 @@
   }
 
   .dz-hub-tile-image-panel {
-    border: 1px solid rgb(246 240 228 / 0.24);
+    border: 1px solid rgb(244 241 232 / 0.24);
     background: linear-gradient(
       180deg,
-      rgb(61 31 16 / 0.34),
-      rgb(61 31 16 / 0.50)
+      rgb(43 74 54 / 0.36),
+      rgb(43 74 54 / 0.52)
     );
-    box-shadow: 0 18px 40px -24px rgb(42 18 8 / 0.65);
+    box-shadow: 0 18px 40px -24px rgb(30 51 40 / 0.65);
   }
 
   .dz-hub-tile-image-text {
     color: white !important;
-    text-shadow: 0 2px 10px rgb(42 18 8 / 0.9);
+    text-shadow: 0 2px 10px rgb(30 51 40 / 0.9);
   }
 
   .dz-hub-tile-rose {
-    border-color: rgb(192 69 43 / 0.28);
-    background: linear-gradient(135deg, rgb(192 69 43 / 0.16), #ede4d0);
+    border-color: rgb(200 136 58 / 0.30);
+    background: linear-gradient(135deg, rgb(200 136 58 / 0.16), #ece8d8);
   }
 
   .dz-hub-tile-amber {
-    border-color: rgb(201 150 12 / 0.35);
-    background: linear-gradient(135deg, rgb(201 150 12 / 0.2), #f6f0e4);
+    border-color: rgb(143 190 154 / 0.35);
+    background: linear-gradient(135deg, rgb(143 190 154 / 0.2), #f4f1e8);
   }
 
   .dz-hub-tile-emerald {
-    border-color: rgb(122 140 110 / 0.32);
-    background: linear-gradient(135deg, rgb(122 140 110 / 0.18), #ede4d0);
+    border-color: rgb(107 154 114 / 0.32);
+    background: linear-gradient(135deg, rgb(107 154 114 / 0.18), #ece8d8);
   }
 
   .dz-hub-tile-sky {
-    border-color: rgb(61 31 16 / 0.22);
-    background: linear-gradient(135deg, rgb(61 31 16 / 0.10), #f6f0e4);
+    border-color: rgb(43 74 54 / 0.22);
+    background: linear-gradient(135deg, rgb(43 74 54 / 0.10), #f4f1e8);
   }
 
   .dz-offerings-grid {
@@ -527,15 +536,15 @@
   }
 
   .dz-step-card-0 {
-    border-left-color: #c0452b;
+    border-left-color: #c8883a;
   }
 
   .dz-step-card-1 {
-    border-left-color: #c9960c;
+    border-left-color: #8fbe9a;
   }
 
   .dz-step-card-2 {
-    border-left-color: #7a8c6e;
+    border-left-color: #6b9a72;
   }
 
   .dz-site-header {
@@ -547,7 +556,7 @@
   }
 
   .dz-btn-hero {
-    @apply justify-center rounded-full bg-accent px-6 text-center font-bold uppercase tracking-wide text-accent-foreground shadow-[0_12px_30px_-18px_rgb(61_31_16_/_0.45)] transition-all hover:bg-[#a33820] hover:shadow-[0_18px_40px_-22px_rgb(61_31_16_/_0.5)] active:scale-[0.98] sm:px-8;
+    @apply justify-center rounded-full bg-accent px-6 text-center font-bold uppercase tracking-wide text-accent-foreground shadow-[0_12px_30px_-18px_rgb(43_74_54_/_0.45)] transition-all hover:bg-[#a86e2a] hover:shadow-[0_18px_40px_-22px_rgb(43_74_54_/_0.5)] active:scale-[0.98] sm:px-8;
     min-width: min(18rem, 100%);
     max-width: 100%;
   }
@@ -582,14 +591,14 @@
     text-decoration: none;
     background: linear-gradient(
       180deg,
-      #f6f0e4 0%,
-      #ede4d0 100%
+      #f4f1e8 0%,
+      #ece8d8 100%
     );
-    border: 1px solid rgb(213 201 176 / 0.95);
+    border: 1px solid rgb(212 206 188 / 0.95);
     border-radius: 9999px;
     box-shadow:
-      0 1px 2px rgb(61 31 16 / 0.08),
-      inset 0 1px 0 rgb(246 240 228 / 0.75);
+      0 1px 2px rgb(43 74 54 / 0.08),
+      inset 0 1px 0 rgb(244 241 232 / 0.75);
     transition:
       transform 0.2s ease,
       box-shadow 0.2s ease,
@@ -601,20 +610,20 @@
   .cozy-nav-btn:hover {
     transform: translateY(-1px);
     color: var(--accent);
-    border-color: rgb(192 69 43 / 0.35);
+    border-color: rgb(200 136 58 / 0.40);
     background: linear-gradient(
       180deg,
-      #f6f0e4 0%,
-      rgb(201 150 12 / 0.2) 100%
+      #f4f1e8 0%,
+      rgb(200 136 58 / 0.18) 100%
     );
     box-shadow:
-      0 4px 12px rgb(61 31 16 / 0.12),
-      inset 0 1px 0 rgb(246 240 228 / 0.8);
+      0 4px 12px rgb(43 74 54 / 0.12),
+      inset 0 1px 0 rgb(244 241 232 / 0.8);
   }
 
   .cozy-nav-btn:active {
     transform: translateY(0);
-    box-shadow: 0 1px 2px rgb(61 31 16 / 0.1);
+    box-shadow: 0 1px 2px rgb(43 74 54 / 0.1);
   }
 
   .cozy-nav-btn:focus-visible {
@@ -623,47 +632,47 @@
   }
 
   .cozy-nav-btn-active {
-    color: var(--primary-foreground);
-    border-color: #a33820;
+    color: var(--accent-foreground);
+    border-color: #a86e2a;
     background: linear-gradient(
       180deg,
-      #c0452b 0%,
-      #a33820 100%
+      #c8883a 0%,
+      #a86e2a 100%
     );
     box-shadow:
-      0 2px 8px rgb(61 31 16 / 0.18),
-      inset 0 1px 0 rgb(246 240 228 / 0.18);
+      0 2px 8px rgb(43 74 54 / 0.18),
+      inset 0 1px 0 rgb(244 241 232 / 0.2);
   }
 
   .cozy-nav-btn-active:hover {
-    color: var(--primary-foreground);
-    border-color: #8f2e18;
+    color: var(--accent-foreground);
+    border-color: #8a5820;
     background: linear-gradient(
       180deg,
-      #b53d26 0%,
-      #8f2e18 100%
+      #bc7c32 0%,
+      #8a5820 100%
     );
   }
 
   .cozy-nav-btn-primary {
-    color: var(--primary-foreground);
-    border-color: #a33820;
+    color: var(--accent-foreground);
+    border-color: #a86e2a;
     background: linear-gradient(
       180deg,
-      #c0452b 0%,
-      #a33820 100%
+      #c8883a 0%,
+      #a86e2a 100%
     );
     box-shadow:
-      0 2px 8px rgb(61 31 16 / 0.18),
-      inset 0 1px 0 rgb(246 240 228 / 0.16);
+      0 2px 8px rgb(43 74 54 / 0.18),
+      inset 0 1px 0 rgb(244 241 232 / 0.18);
   }
 
   .cozy-nav-btn-primary:hover {
-    color: var(--primary-foreground);
+    color: var(--accent-foreground);
     transform: translateY(-1px);
     box-shadow:
-      0 4px 14px rgb(61 31 16 / 0.22),
-      inset 0 1px 0 rgb(246 240 228 / 0.16);
+      0 4px 14px rgb(43 74 54 / 0.22),
+      inset 0 1px 0 rgb(244 241 232 / 0.18);
   }
 
   .dz-nav-link {
@@ -675,6 +684,6 @@
   }
 
   .dz-header-cta {
-    @apply rounded-full bg-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-accent-foreground shadow-[0_10px_24px_-18px_rgb(61_31_16_/_0.5)] transition-all hover:bg-[#a33820] hover:shadow-[0_14px_28px_-18px_rgb(61_31_16_/_0.55)];
+    @apply rounded-full bg-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-accent-foreground shadow-[0_10px_24px_-18px_rgb(43_74_54_/_0.5)] transition-all hover:bg-[#a86e2a] hover:shadow-[0_14px_28px_-18px_rgb(43_74_54_/_0.55)];
   }
 }

@@ -16,7 +16,7 @@ const TILE_THEMES = [
     image: "/images/teambuilding.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(192 69 43 / 0.68), rgb(61 31 16 / 0.5))",
+      "linear-gradient(135deg, rgb(200 136 58 / 0.68), rgb(43 74 54 / 0.5))",
   },
   {
     bar: "bg-accent-bright",
@@ -27,7 +27,7 @@ const TILE_THEMES = [
     image: "/images/kids.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(201 150 12 / 0.56), rgb(61 31 16 / 0.56))",
+      "linear-gradient(135deg, rgb(143 190 154 / 0.56), rgb(43 74 54 / 0.56))",
   },
   {
     bar: "bg-cozy-sage",
@@ -38,18 +38,18 @@ const TILE_THEMES = [
     image: "/images/coffeshop.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(122 140 110 / 0.62), rgb(61 31 16 / 0.54))",
+      "linear-gradient(135deg, rgb(107 154 114 / 0.62), rgb(43 74 54 / 0.54))",
   },
   {
     bar: "bg-secondary",
     surface: "dz-hub-tile-sky",
-    panel: "bg-amber-50/80",
+    panel: "bg-green-50/80",
     title: "text-stone-950",
     body: "text-stone-950/70",
     image: "/images/library.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(61 31 16 / 0.68), rgb(192 69 43 / 0.42))",
+      "linear-gradient(135deg, rgb(43 74 54 / 0.68), rgb(200 136 58 / 0.42))",
   },
 ] as const;
 
