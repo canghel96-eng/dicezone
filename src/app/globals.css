@@ -244,7 +244,7 @@
         rgb(111 154 115 / 0.16),
         transparent 45%
       ),
-      url("/images/homepage.png"),
+      url("/images/homepage.webp"),
       linear-gradient(
         165deg,
         #1e2a5a 0%,
@@ -274,7 +274,7 @@
         rgb(232 93 74 / 0.18),
         transparent 60%
       ),
-      url("/images/teambuilding.png"),
+      url("/images/teambuilding.webp"),
       linear-gradient(
         165deg,
         #1e2a5a 0%,
@@ -303,7 +303,7 @@
         rgb(111 154 115 / 0.18),
         transparent 45%
       ),
-      url("/images/kids.png"),
+      url("/images/kids.webp"),
       linear-gradient(
         165deg,
         #1e2a5a 0%,

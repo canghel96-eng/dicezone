@@ -148,6 +148,15 @@ export type Dictionary = {
     heroDescription: string;
     browseCta: string;
     steps: { title: string; text: string }[];
+    pricingTitle: string;
+    pricingSubtitle: string;
+    pricingTiers: {
+      title: string;
+      retail: string;
+      advance: string;
+      daily: string;
+      note: string;
+    }[];
   };
   about: {
     metaTitle: string;
@@ -178,6 +187,8 @@ export type Dictionary = {
     durationLabel: string;
     ageLabel: string;
     rentalLabel: string;
+    advancePaymentLabel: string;
+    refundableAdvanceNote: string;
     corporateUse: string;
     venueOnly: string;
     rentCta: string;

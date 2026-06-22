@@ -35,6 +35,44 @@ export default async function RentPage() {
         </Button>
       </PageHero>
 
+      <section className="cozy-section-alt">
+        <Box className="cozy-container">
+          <Box className="mx-auto max-w-3xl text-center">
+            <h2 className="font-serif text-3xl font-semibold text-primary">
+              {d.rent.pricingTitle}
+            </h2>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              {d.rent.pricingSubtitle}
+            </p>
+          </Box>
+          <Box className="mt-10 grid gap-6 md:grid-cols-2">
+            {d.rent.pricingTiers.map((tier) => (
+              <Card key={tier.title} className="cozy-card">
+                <CardHeader>
+                  <CardTitle className="font-serif font-medium">
+                    {tier.title}
+                  </CardTitle>
+                  <CardDescription className="space-y-3 text-base leading-relaxed">
+                    <span className="block text-muted-foreground">
+                      {tier.retail}
+                    </span>
+                    <span className="block font-semibold text-primary">
+                      {tier.advance}
+                    </span>
+                    <span className="block font-semibold text-primary">
+                      {tier.daily}
+                    </span>
+                    <span className="block text-sm text-muted-foreground">
+                      {tier.note}
+                    </span>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
+          </Box>
+        </Box>
+      </section>
+
       <section className="cozy-section pb-20">
         <Box className="cozy-container">
           <Box className="grid gap-6 md:grid-cols-3">

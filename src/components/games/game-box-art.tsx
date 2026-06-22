@@ -8,62 +8,95 @@ const BOX_ART_IMAGES: Record<
     image: string;
     cardPosition?: string;
     cardSize?: string;
+    detailPosition?: string;
     featuredSize?: string;
     position?: string;
   }
 > = {
   codenames: {
-    image: "/images/games/codenames.jpg",
-    cardPosition: "center 24%",
+    image: "/images/games/codenames.webp",
+    cardPosition: "center 20%",
+    detailPosition: "center 18%",
   },
   "the-resistance": {
-    image: "/images/games/theResistance.png",
-    cardPosition: "center 22%",
+    image: "/images/games/theResistance.webp",
+    cardPosition: "center 15%",
+    detailPosition: "center 18%",
   },
   wavelength: {
-    image: "/images/games/wavelenght.png",
+    image: "/images/games/wavelenght.webp",
     cardPosition: "center 50%",
+    detailPosition: "center 48%",
     featuredSize: "132% auto",
   },
   decrypto: {
-    image: "/images/games/Decrypto.png",
-    cardPosition: "center 28%",
+    image: "/images/games/Decrypto.webp",
+    cardPosition: "center 15%",
+    detailPosition: "center 18%",
   },
   "just-one": {
-    image: "/images/games/JustOne.png",
+    image: "/images/games/JustOne.webp",
     cardPosition: "center 46%",
+    detailPosition: "center 42%",
   },
   dixit: {
-    image: "/images/games/Dixit.png",
+    image: "/images/games/Dixit.webp",
     cardPosition: "center 34%",
+    detailPosition: "center 36%",
   },
   "forbidden-island": {
-    image: "/images/games/ForbiddenIsland.png",
+    image: "/images/games/ForbiddenIsland.webp",
     cardPosition: "center 18%",
+    detailPosition: "center 20%",
   },
   "ticket-to-ride": {
-    image: "/images/games/TicketToRide.png",
-    cardPosition: "center 26%",
+    image: "/images/games/TicketToRide.webp",
+    cardPosition: "center 40%",
+    detailPosition: "center 42%",
   },
   splendor: {
-    image: "/images/library.png",
+    image: "/images/library.webp",
+    detailPosition: "center",
   },
   azul: {
-    image: "/images/games/Azul.png",
+    image: "/images/games/Azul.webp",
     cardPosition: "center 50%",
+    detailPosition: "center 48%",
     featuredSize: "132% auto",
   },
   carcassonne: {
-    image: "/images/games/Carcassonne.png",
+    image: "/images/games/Carcassonne.webp",
     cardPosition: "center 18%",
+    detailPosition: "center 20%",
   },
   collectives9: {
-    image: "/images/games/Collectives9.png",
+    image: "/images/games/Collectives9.webp",
     cardPosition: "center 50%",
+    detailPosition: "center 48%",
+  },
+  flip7: {
+    image: "/images/games/Flip7.webp",
+    cardPosition: "center 50%",
+    detailPosition: "center 46%",
+  },
+  "port-royal": {
+    image: "/images/games/PortRoyal.webp",
+    cardPosition: "center 20%",
+    detailPosition: "center 22%",
+  },
+  "the-mind": {
+    image: "/images/games/TheMind.webp",
+    cardPosition: "center 25%",
+    detailPosition: "center 24%",
+  },
+  "love-letter": {
+    image: "/images/games/LoveLetter.webp",
+    cardPosition: "center 15%",
+    detailPosition: "center 30%",
   },
 };
 
-const FALLBACK_IMAGE = "/images/library.png";
+const FALLBACK_IMAGE = "/images/library.webp";
 
 export function GameBoxArt({
   game,
@@ -80,7 +113,12 @@ export function GameBoxArt({
   const backgroundPosition =
     size === "card"
       ? (theme.cardPosition ?? theme.position ?? "center")
-      : (theme.position ?? "center");
+      : size === "detail"
+        ? (theme.detailPosition ??
+          theme.position ??
+          theme.cardPosition ??
+          "center")
+        : (theme.position ?? theme.cardPosition ?? "center");
   const backgroundSize =
     size === "card"
       ? (theme.cardSize ?? "cover")

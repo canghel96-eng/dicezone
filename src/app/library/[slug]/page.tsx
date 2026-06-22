@@ -5,7 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { Box } from "@/components/ui/box";
 import { getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
-import { formatPrice, getGameBySlug, getGameSlugs } from "@/lib/games";
+import {
+  formatPrice,
+  getGameBySlug,
+  getGameSlugs,
+  getRentalTerms,
+} from "@/lib/games";
 
 export function generateStaticParams() {
   return getGameSlugs().map((slug) => ({ slug }));
@@ -36,6 +41,7 @@ export default async function GameDetailPage({
   if (!game) notFound();
 
   const rentable = game.tags.includes("rentable");
+  const rentalTerms = getRentalTerms(game);
 
   return (
     <section className="cozy-section">
@@ -75,11 +81,22 @@ export default async function GameDetailPage({
               </span>{" "}
               {game.ageMin}+
             </li>
-            {game.rentalPricePerDayCents && rentable && (
+            {rentalTerms && rentable && (
               <li className="text-base font-semibold text-primary">
                 {d.library.rentalLabel}{" "}
-                {formatPrice(game.rentalPricePerDayCents, locale)}
+                {formatPrice(rentalTerms.rentalPricePerDayCents, locale)}
                 {d.ui.perDay}
+              </li>
+            )}
+            {rentalTerms && rentable && (
+              <li>
+                <span className="font-semibold text-foreground">
+                  {d.library.advancePaymentLabel}
+                </span>{" "}
+                {formatPrice(rentalTerms.advancePaymentCents, locale)}
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {d.library.refundableAdvanceNote}
+                </p>
               </li>
             )}
           </ul>

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1610fae9-4179-459b-a04b-88631438125a",
+    "status": "inquiry",
+    "eventType": "corporate",
+    "companyOrOrganization": "test ssrl",
+    "contactName": "Ciprian Anghel",
+    "contactEmail": "c.anghel96@gmail.com",
+    "contactPhone": "0773936550",
+    "teamSize": 8,
+    "preferredDates": [
+      "2026-05-21",
+      "2026-05-22"
+    ],
+    "locationType": "client_site",
+    "address": "Bucurest",
+    "message": "c",
+    "createdAt": "2026-05-19T21:54:08.329Z",
+    "updatedAt": "2026-05-19T21:54:08.329Z"
+  }
+]

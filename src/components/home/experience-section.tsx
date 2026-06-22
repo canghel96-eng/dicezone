@@ -49,7 +49,7 @@ export function ExperienceSection({
     >
       <Box className="dz-experience-meet-image aspect-[4/3] overflow-hidden rounded-3xl border border-border/80 bg-card shadow-[var(--shadow-cozy-lg)]">
         <Image
-          src="/images/AtTheTable.png"
+          src="/images/AtTheTable.webp"
           alt={imageAlt}
           width={1200}
           height={900}

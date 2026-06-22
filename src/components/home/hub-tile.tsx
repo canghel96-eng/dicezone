@@ -13,7 +13,7 @@ const TILE_THEMES = [
     panel: "bg-white/45",
     title: "text-rose-950",
     body: "text-rose-950/70",
-    image: "/images/teambuilding.png",
+    image: "/images/teambuilding.webp",
     imagePosition: "center",
     overlay:
       "linear-gradient(135deg, rgb(232 93 74 / 0.68), rgb(30 42 90 / 0.5))",
@@ -24,7 +24,7 @@ const TILE_THEMES = [
     panel: "bg-white/45",
     title: "text-amber-950",
     body: "text-amber-950/70",
-    image: "/images/kids.png",
+    image: "/images/kids.webp",
     imagePosition: "center",
     overlay:
       "linear-gradient(135deg, rgb(230 180 75 / 0.56), rgb(30 42 90 / 0.56))",
@@ -35,7 +35,7 @@ const TILE_THEMES = [
     panel: "bg-white/40",
     title: "text-emerald-950",
     body: "text-emerald-950/70",
-    image: "/images/coffeshop.png",
+    image: "/images/coffeshop.webp",
     imagePosition: "center",
     overlay:
       "linear-gradient(135deg, rgb(111 154 115 / 0.62), rgb(30 42 90 / 0.54))",
@@ -46,7 +46,7 @@ const TILE_THEMES = [
     panel: "bg-cyan-50/80",
     title: "text-sky-950",
     body: "text-sky-950/70",
-    image: "/images/library.png",
+    image: "/images/library.webp",
     imagePosition: "center",
     overlay:
       "linear-gradient(135deg, rgb(30 42 90 / 0.68), rgb(232 93 74 / 0.42))",

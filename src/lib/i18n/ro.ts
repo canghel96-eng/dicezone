@@ -2,7 +2,7 @@ import type { Dictionary } from "./types";
 
 export const ro: Dictionary = {
   meta: {
-    defaultTitle: "DiceZone | Evenimente și închirieri jocuri de societate",
+    defaultTitle: "DiceZone",
     description:
       "Experiențe cu jocuri de societate pentru echipe, familii și jucători curioși.",
   },
@@ -37,11 +37,23 @@ export const ro: Dictionary = {
     corporate: "corporate",
     communication: "comunicare",
     "social-deduction": "deducție socială",
+    "party-games": "jocuri de petrecere",
+    "family-games": "jocuri de familie",
+    "strategy-games": "jocuri de strategie",
+    "logic-games": "jocuri de logică",
+    "word-games": "jocuri de cuvinte",
+    "math-games": "jocuri de matematică",
+    "card-game": "jocuri de cărți",
+    "memory-games": "jocuri de memorie",
+    "science-games": "jocuri de știință",
+    "history-games": "jocuri de istorie",
     kids: "copii",
     rentable: "de închiriat",
+    "rent-under-100": "retail sub 100 lei",
+    "rent-over-100": "retail peste 100 lei",
     "venue-only": "doar la locație",
   },
-  siteRegion: "Bucuresti",
+  siteRegion: "București",
   images: {
     hero: "Prieteni care râd jucând jocuri de societate împreună",
     groupPlaying: "Un grup adunat în jurul mesei pentru o sesiune de jocuri",
@@ -52,15 +64,15 @@ export const ro: Dictionary = {
   },
   footer: {
     blurb:
-      "Experiențe cu jocuri de societate pentru echipe corporate, copii și jucători din {region}. Trageți un scaun la masă — noi aducem jocurile.",
-    copyright: "© {year} DiceZone. Creat cu",
+      "Experiențe memorabile pentru toți. Trageți un scaun la masă, aducem noi jocurile.",
+    copyright: "© {year} DiceZone. Creat din pasiune",
     copyrightEnd: "pentru cei care iubesc să joace împreună.",
-    serving: "Deservim {region}",
+    serving: "Acum în {region}",
   },
   socialContact: {
     headline: "Vrei să rezervi sau să afli mai multe?",
     subtext:
-      "Scrie-ne direct pe WhatsApp, Instagram sau Facebook și îți răspundem cât mai rapid.",
+      "Scrie-ne direct pe WhatsApp, Instagram sau Facebook și îți răspundem imediat.",
     whatsapp: "Scrie-ne pe WhatsApp",
     instagram: "Mesaj pe Instagram",
     facebook: "Mesaj pe Facebook",
@@ -70,9 +82,9 @@ export const ro: Dictionary = {
     heroAccent:
       "Așezăm piesele, deschidem conversațiile și transformăm timpul petrecut împreună în amintiri.",
     heroDescription:
-      "DiceZone creează experiențe cu jocuri de societate pentru prieteni, familii, copii și echipe în Bucuresti. Râs, strategie și conexiuni reale în jurul mesei de joc.",
+      "DiceZone creează experiențe cu jocuri de societate pentru toți. Este timpul să tragi un scaun la masă și să ne jucăm împreună.",
     bookCorporate: "Planifică o sesiune de joc",
-    browseLibrary: "Explorează biblioteca",
+    browseLibrary: "Verifică evenimentele",
     offerEyebrow: "Universul DiceZone",
     offerTitle: "Ce oferim",
     offerSubtitle:
@@ -96,7 +108,7 @@ export const ro: Dictionary = {
       {
         title: "Bibliotecă la partener",
         description:
-          "Joacă din biblioteca noastră la un restaurant partener local — în curând.",
+          "Joacă din biblioteca noastră la un restaurant partener local. În curând.",
       },
       {
         title: "Închiriere jocuri",
@@ -111,7 +123,7 @@ export const ro: Dictionary = {
     steps: [
       {
         title: "Spune-ne obiectivele",
-        text: "Mărimea echipei, datele și dacă ai nevoie de locație — noi ne ocupăm de rest.",
+        text: "Mărimea echipei, datele și dacă ai nevoie de locație. Noi ne ocupăm de rest.",
       },
       {
         title: "Alegem jocurile",
@@ -131,22 +143,22 @@ export const ro: Dictionary = {
     galleryEyebrow: "În jurul mesei",
     galleryTitle: "Momente reale, conexiuni reale",
     gallerySubtitle:
-      "De la team building corporate la seri de jocuri în familie — râs, strategie și amintiri care rămân.",
+      "De la team building corporate la seri de jocuri în familie, râs, strategie și amintiri care rămân.",
     experienceEyebrow: "De ce funcționează",
     experienceTitle: "Jocul apropie oamenii",
     experienceText:
-      "Jocurile de societate scad presiunea. Fiecare are un rol la masă — vorbește, ascultă, râde și rezolvă probleme împreună. Aceasta este energia pe care o aducem la fiecare sesiune DiceZone.",
+      "Jocurile de societate scad presiunea. Fiecare are un rol la masă: vorbește, ascultă, râde și rezolvă probleme împreună. Aceasta este energia pe care o aducem la fiecare sesiune DiceZone.",
   },
   corporate: {
     metaTitle: "Team building corporate",
     heroTitle: "Team building corporate prin jocuri de societate",
     heroDescription:
-      "Sesiuni facilitate axate pe comunicare și deducție socială — la biroul tău sau într-o locație pe care o aranjăm pentru tine.",
+      "Sesiuni facilitate axate pe comunicare și deducție socială, la biroul tău sau într-o locație pe care o aranjăm pentru tine.",
     bookCta: "Rezervă evenimentul",
     features: [
       {
         title: "Jocuri de comunicare",
-        text: "Codenames, Wavelength, Just One și altele — pentru ca echipele să vorbească și să asculte.",
+        text: "Codenames, Wavelength, Just One și altele, pentru ca echipele să vorbească și să asculte.",
       },
       {
         title: "Deducție socială",
@@ -154,7 +166,7 @@ export const ro: Dictionary = {
       },
       {
         title: "Facilitat și cu debrief",
-        text: "Conducem sesiunea și legăm jocul de colaborarea reală — fără experiență anterioară cu jocurile.",
+        text: "Conducem sesiunea și legăm jocul de colaborarea reală. Nu este nevoie de experiență anterioară cu jocurile.",
       },
     ],
     packagesTitle: "Pachete corporate",
@@ -189,21 +201,21 @@ export const ro: Dictionary = {
     ],
     locationTitle: "Opțiuni de locație",
     locationItems: [
-      "La biroul tău — venim noi cu jocurile și facilitarea.",
-      "Locație aranjată de DiceZone — cafenea, restaurant sau sală privată în zona ta.",
+      "La biroul tău, venim noi cu jocurile și facilitarea.",
+      "Locație aranjată de DiceZone: cafenea, restaurant sau sală privată în zona ta.",
     ],
     locationNote:
       "Sesiunile tipice durează 2–3 ore, pentru grupuri de 8–40 de persoane. Formate personalizate la cerere.",
     gamesTitle: "Jocuri pe care le folosim des",
     experienceTitle: "Echipele care joacă împreună, lucrează mai bine împreună",
     experienceText:
-      "Facilitatorii noștri ghidează sala astfel încât toată lumea să participe — inclusiv cei introvertiți. Fără icebreakere stânjenitoare, doar distracție structurată care construiește relații reale.",
+      "Facilitatorii noștri ghidează sala astfel încât toată lumea să participe, inclusiv cei introvertiți. Fără icebreakere stânjenitoare, doar distracție structurată care construiește relații reale.",
   },
   kids: {
     metaTitle: "Educație pentru copii",
     heroTitle: "Evenimente educative cu jocuri de societate pentru copii",
     heroDescription:
-      "Cooperare, răbdare și rezolvarea problemelor prin joc facilitat — pentru școli, tabere și grupuri de părinți.",
+      "Cooperare, răbdare și rezolvarea problemelor prin joc facilitat pentru școli, tabere și grupuri de părinți.",
     bookCta: "Rezervă o sesiune",
     features: [
       {
@@ -228,7 +240,7 @@ export const ro: Dictionary = {
     metaTitle: "Locație parteneră",
     heroTitle: "Joacă la locația noastră parteneră",
     heroDescription:
-      "Colaborăm cu restaurante și cafenele locale pentru o bibliotecă permanentă DiceZone — taxă mică pentru joc la fața locului.",
+      "Colaborăm cu restaurante și cafenele locale pentru o bibliotecă permanentă DiceZone, cu taxă mică pentru joc la fața locului.",
     comingTitle: "În curând",
     comingText:
       "Semnăm prima locație parteneră în {region}. Vrei să găzduiești o bibliotecă de jocuri la restaurantul tău sau să fii anunțat la lansare?",
@@ -282,7 +294,7 @@ export const ro: Dictionary = {
     metaTitle: "Închiriere jocuri",
     heroTitle: "Închiriază jocuri din biblioteca noastră",
     heroDescription:
-      "Ia acasă un titlu pentru câteva zile. Tarif zilnic simplu — scrie-ne pe WhatsApp pentru disponibilitate și ridicare.",
+      "Ia acasă un titlu pentru câteva zile. Tarif zilnic simplu. Scrie-ne pe WhatsApp pentru disponibilitate și ridicare.",
     browseCta: "Explorează biblioteca",
     steps: [
       {
@@ -298,14 +310,33 @@ export const ro: Dictionary = {
         text: "Confirmăm prin mesaj locul de ridicare și instrucțiunile de returnare.",
       },
     ],
+    pricingTitle: "Prețuri închiriere",
+    pricingSubtitle:
+      "Avansul este returnat integral când jocul revine complet și în stare bună.",
+    pricingTiers: [
+      {
+        title: "Jocuri cu preț retail sub 100 lei",
+        retail: "Retail sub 100 lei",
+        advance: "Avans returnabil: 50 lei",
+        daily: "Închiriere: 20 lei / zi",
+        note: "Potrivite pentru jocuri compacte și titluri de cărți.",
+      },
+      {
+        title: "Jocuri cu preț retail peste 100 lei",
+        retail: "Retail peste 100 lei",
+        advance: "Avans returnabil: 100 lei",
+        daily: "Închiriere: 35 lei / zi",
+        note: "Pentru jocuri mai mari sau cu valoare de retail mai ridicată.",
+      },
+    ],
   },
   about: {
     metaTitle: "Despre noi",
     heroTitle: "Despre DiceZone",
     heroDescription:
-      "Credem că cele mai bune experiențe de echipă și de învățare se întâmplă în jurul unei mese — nu al unui set de slide-uri.",
+      "Credem că cele mai bune experiențe de echipă și de învățare se întâmplă în jurul unei mese, nu al unui set de slide-uri.",
     intro:
-      "DiceZone a fost creat pentru a aduce joc cu sens la locurile de muncă și în sălile de clasă din {region}. Ne specializăm pe jocuri care întăresc comunicarea, colaborarea și conștientizarea socială — apoi facilităm sesiunile astfel încât fiecare participant să se simtă inclus.",
+      "DiceZone a fost creat pentru a aduce joc cu sens la locurile de muncă și în sălile de clasă din {region}. Ne specializăm pe jocuri care întăresc comunicarea, colaborarea și conștientizarea socială, apoi facilităm sesiunile astfel încât fiecare participant să se simtă inclus.",
     whatTitle: "Ce facem",
     whatItems: [
       "Team building corporate cu jocuri de comunicare și deducție socială",
@@ -319,7 +350,7 @@ export const ro: Dictionary = {
     approach2:
       "Fie că planifici un offsite, un atelier școlar sau o închiriere de weekend, suntem aici să fie simplu și cu adevărat distractiv.",
     photoCaption:
-      "Fiecare sesiune se construiește în jurul mesei — unde conversația, râsul și munca în echipă apar natural.",
+      "Fiecare sesiune se construiește în jurul mesei, unde conversația, râsul și munca în echipă apar natural.",
   },
   contact: {
     metaTitle: "Contact",
@@ -338,6 +369,8 @@ export const ro: Dictionary = {
       { tag: "corporate", label: "Corporate" },
       { tag: "kids", label: "Copii" },
       { tag: "rentable", label: "De închiriat" },
+      { tag: "rent-under-100", label: "Retail sub 100 lei" },
+      { tag: "rent-over-100", label: "Retail peste 100 lei" },
       { tag: "communication", label: "Comunicare" },
       { tag: "social-deduction", label: "Deducție socială" },
     ],
@@ -347,6 +380,9 @@ export const ro: Dictionary = {
     durationLabel: "Durată:",
     ageLabel: "Vârstă:",
     rentalLabel: "Închiriere:",
+    advancePaymentLabel: "Avans returnabil:",
+    refundableAdvanceNote:
+      "Avansul se returnează când jocul este adus înapoi complet și în stare bună.",
     corporateUse: "Folosește la eveniment corporate",
     venueOnly: "Acest titlu este disponibil doar în cadrul evenimentelor facilitate.",
     rentCta: "Închiriază acest joc",
@@ -364,7 +400,7 @@ export const ro: Dictionary = {
     },
     "the-resistance": {
       description:
-        "Deducție socială pură — agenți loiali contra spioni ascunși. Construiește încredere, observație și discuții de echipă sub presiune.",
+        "Deducție socială pură: agenți loiali contra spioni ascunși. Construiește încredere, observație și discuții de echipă sub presiune.",
     },
     wavelength: {
       description:
@@ -376,7 +412,7 @@ export const ro: Dictionary = {
     },
     "just-one": {
       description:
-        "Indicii cooperative cu o regulă specială — indiciile duplicate se elimină. Reguli simple, multe râsete, potrivit pentru orice nivel.",
+        "Indicii cooperative cu o regulă specială: indiciile duplicate se elimină. Reguli simple, multe râsete, potrivit pentru orice nivel.",
     },
     dixit: {
       description:
@@ -403,6 +439,18 @@ export const ro: Dictionary = {
     },
     collectives9: {
       description: "Un joc de echipă cu provocări rapide de comunicare, cultură generală și creativitate în care jucătorii colaborează pentru a câștiga puncte.",
+    },
+    flip7: {
+      description: "Pregătește-te să riști totul: întoarce cărți, adună puncte și decide momentul perfect să te oprești înainte să pierzi tot. Simplu de învățat, greu de lăsat din mână.",
+    },
+    "port-royal": {
+      description: "Intră în lumea comerțului și a aventurii, recrutează echipaj, adună comori și asumă-ți riscuri pentru a-ți construi reputația înaintea rivalilor.",
+    },
+    "the-mind": {
+      description: "Conectează-te cu ceilalți fără să vorbești, joacă fiecare carte la momentul potrivit și descoperă cât de bine puteți gândi ca o singură echipă.",
+    },
+    "love-letter": {
+      description: "Citește intențiile adversarilor, dedu ce cărți ascund și folosește fiecare alegere cu grijă pentru a elimina rivalii și a ajunge primul la inima prințesei. O experiență rapidă de deducție socială și bluff.",
     },
   },
 };

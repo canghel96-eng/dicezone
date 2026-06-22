@@ -41,7 +41,7 @@ export default async function FullHomePage() {
           {d.home.bookCorporate}
         </Link>
         <Link
-          href="/library"
+          href="/events"
           className="dz-btn-hero-outline inline-flex h-12 items-center px-8 text-sm"
         >
           {d.home.browseLibrary}

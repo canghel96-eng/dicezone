@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { GameBoxArt } from "@/components/games/game-box-art";
 import { getDictionary, type Locale } from "@/lib/i18n";
-import { formatPrice } from "@/lib/games";
+import { formatPrice, getRentalTerms } from "@/lib/games";
 import type { Game } from "@/types/game";
 
 export function GameCard({
@@ -22,6 +22,7 @@ export function GameCard({
 }) {
   const d = getDictionary(locale);
   const featured = variant === "featured";
+  const rentalTerms = getRentalTerms(game);
 
   return (
     <Card className="cozy-card group flex h-full flex-col overflow-hidden rounded-2xl">
@@ -58,11 +59,18 @@ export function GameCard({
         <p>
           {game.playerCount} {d.ui.players} · {game.duration} · {game.ageMin}+
         </p>
-        {game.rentalPricePerDayCents && game.tags.includes("rentable") && (
-          <p className="font-semibold text-primary">
-            {d.ui.rentFrom} {formatPrice(game.rentalPricePerDayCents, locale)}
-            {d.ui.perDay}
-          </p>
+        {rentalTerms && (
+          <div className="space-y-1 font-semibold text-primary">
+            <p>
+              {d.ui.rentFrom}{" "}
+              {formatPrice(rentalTerms.rentalPricePerDayCents, locale)}
+              {d.ui.perDay}
+            </p>
+            <p className="text-xs text-muted-foreground">
+              {d.library.advancePaymentLabel}{" "}
+              {formatPrice(rentalTerms.advancePaymentCents, locale)}
+            </p>
+          </div>
         )}
       </CardContent>
     </Card>

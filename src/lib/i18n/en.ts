@@ -2,7 +2,7 @@ import type { Dictionary } from "./types";
 
 export const en: Dictionary = {
   meta: {
-    defaultTitle: "DiceZone | Board game events & rentals",
+    defaultTitle: "DiceZone",
     description:
       "Board game experiences for teams, families, and curious players.",
   },
@@ -37,11 +37,23 @@ export const en: Dictionary = {
     corporate: "corporate",
     communication: "communication",
     "social-deduction": "social deduction",
+    "party-games": "party games",
+    "family-games": "family games",
+    "strategy-games": "strategy games",
+    "logic-games": "logic games",
+    "word-games": "word games",
+    "math-games": "math games",
+    "card-game": "card games",
+    "memory-games": "memory games",
+    "science-games": "science games",
+    "history-games": "history games",
     kids: "kids",
     rentable: "rentable",
+    "rent-under-100": "retail under 100 lei",
+    "rent-over-100": "retail over 100 lei",
     "venue-only": "venue only",
   },
-  siteRegion: "Greater Metro Area",
+  siteRegion: "Bucharest",
   images: {
     hero: "Friends laughing while playing board games together",
     groupPlaying: "A group gathered around a table for a board game session",
@@ -52,15 +64,15 @@ export const en: Dictionary = {
   },
   footer: {
     blurb:
-      "Board game experiences for corporate teams, kids, and players in the {region}. Pull up a chair — we'll bring the games.",
-    copyright: "© {year} DiceZone. Made with",
+      "Memorable experiences for everyone. Pull up a chair, we'll bring the games.",
+    copyright: "© {year} DiceZone. Made with passion",
     copyrightEnd: "for people who love to play together.",
-    serving: "Serving the {region}",
+    serving: "Now in {region}",
   },
   socialContact: {
     headline: "Want to book or find out more?",
     subtext:
-      "Message us directly on WhatsApp, Instagram, or Facebook and we'll get back to you quickly.",
+      "Message us directly on WhatsApp, Instagram, or Facebook and we'll get back to you right away.",
     whatsapp: "Message us on WhatsApp",
     instagram: "Message on Instagram",
     facebook: "Message on Facebook",
@@ -70,13 +82,13 @@ export const en: Dictionary = {
     heroAccent:
       "We set up the pieces, open up the conversation, and turn shared time into memories.",
     heroDescription:
-      "DiceZone creates board game experiences for friends, families, kids, and teams in the {region}. Laughter, strategy, and real connection around the table.",
+      "DiceZone creates board game experiences for everyone. It is time to pull up a chair and play together.",
     bookCorporate: "Plan a game session",
-    browseLibrary: "Browse game library",
+    browseLibrary: "Check events",
     offerEyebrow: "The DiceZone universe",
     offerTitle: "What we offer",
     offerSubtitle:
-      "From corporate offsites to kids' workshops, play-at-venue, and rentals — one curated library, many ways to play.",
+      "From corporate offsites to kids' workshops, play-at-venue, and rentals. One curated library, many ways to play.",
     offerings: [
       {
         title: "Public events",
@@ -96,7 +108,7 @@ export const en: Dictionary = {
       {
         title: "Partner venue library",
         description:
-          "Play from our game library at a local restaurant partner — coming soon.",
+          "Play from our game library at a local restaurant partner. Coming soon.",
       },
       {
         title: "Game rental",
@@ -111,7 +123,7 @@ export const en: Dictionary = {
     steps: [
       {
         title: "Tell us your goals",
-        text: "Team size, dates, and whether you need a venue — we handle the rest.",
+        text: "Team size, dates, and whether you need a venue. We handle the rest.",
       },
       {
         title: "We curate the games",
@@ -131,22 +143,22 @@ export const en: Dictionary = {
     galleryEyebrow: "Around the table",
     galleryTitle: "Real moments, real connection",
     gallerySubtitle:
-      "From corporate offsites to family game nights — laughter, strategy, and stories that stick.",
+      "From corporate offsites to family game nights, laughter, strategy, and stories that stick.",
     experienceEyebrow: "Why it works",
     experienceTitle: "Play brings people closer",
     experienceText:
-      "Board games lower the pressure. Everyone has a role at the table — talking, listening, laughing, and solving problems together. That is the energy we bring to every DiceZone session.",
+      "Board games lower the pressure. Everyone has a role at the table: talking, listening, laughing, and solving problems together. That is the energy we bring to every DiceZone session.",
   },
   corporate: {
     metaTitle: "Corporate team building",
     heroTitle: "Corporate team building through board games",
     heroDescription:
-      "Facilitated sessions focused on communication and social deduction — at your office or a venue we arrange for you.",
+      "Facilitated sessions focused on communication and social deduction, at your office or a venue we arrange for you.",
     bookCta: "Book your event",
     features: [
       {
         title: "Communication games",
-        text: "Codenames, Wavelength, Just One, and more — designed to get teams talking and listening.",
+        text: "Codenames, Wavelength, Just One, and more, designed to get teams talking and listening.",
       },
       {
         title: "Social deduction",
@@ -154,7 +166,7 @@ export const en: Dictionary = {
       },
       {
         title: "Facilitated & debriefed",
-        text: "We run the session and tie gameplay to real collaboration skills — no gaming experience needed.",
+        text: "We run the session and tie gameplay to real collaboration skills. No gaming experience needed.",
       },
     ],
     packagesTitle: "Corporate packages",
@@ -189,21 +201,21 @@ export const en: Dictionary = {
     ],
     locationTitle: "Location options",
     locationItems: [
-      "Your office — we come to you with games and facilitation.",
-      "Venue arranged by DiceZone — café, restaurant, or private room in your area.",
+      "Your office, we come to you with games and facilitation.",
+      "Venue arranged by DiceZone: cafe, restaurant, or private room in your area.",
     ],
     locationNote:
       "Typical sessions run 2–3 hours for groups of 8–40 people. Custom formats available on request.",
     gamesTitle: "Games we often use",
     experienceTitle: "Teams that play together, work better together",
     experienceText:
-      "Our facilitators guide the room so everyone participates — introverts included. No awkward icebreakers, just structured fun that builds real rapport.",
+      "Our facilitators guide the room so everyone participates, introverts included. No awkward icebreakers, just structured fun that builds real rapport.",
   },
   kids: {
     metaTitle: "Kids education",
     heroTitle: "Educational board game events for kids",
     heroDescription:
-      "Cooperation, turn-taking, and problem-solving through facilitated play — for schools, camps, and parent groups.",
+      "Cooperation, turn-taking, and problem-solving through facilitated play for schools, camps, and parent groups.",
     bookCta: "Book a session",
     features: [
       {
@@ -228,7 +240,7 @@ export const en: Dictionary = {
     metaTitle: "Partner venue",
     heroTitle: "Play at our partner venue",
     heroDescription:
-      "We're partnering with local restaurants and cafés to host a permanent DiceZone game library — pay a small fee to play on site.",
+      "We're partnering with local restaurants and cafes to host a permanent DiceZone game library, with a small fee to play on site.",
     comingTitle: "Coming soon",
     comingText:
       "We're signing our first partner venue in the {region}. Want to host a game library at your restaurant, or get notified when we launch?",
@@ -282,7 +294,7 @@ export const en: Dictionary = {
     metaTitle: "Rent a game",
     heroTitle: "Rent games from our library",
     heroDescription:
-      "Take a title home for a few days. Simple daily pricing — message us on WhatsApp to check availability and arrange pickup.",
+      "Take a title home for a few days. Simple daily pricing. Message us on WhatsApp to check availability and arrange pickup.",
     browseCta: "Browse library",
     steps: [
       {
@@ -298,14 +310,33 @@ export const en: Dictionary = {
         text: "We'll confirm pickup location and return instructions by message.",
       },
     ],
+    pricingTitle: "Rental prices",
+    pricingSubtitle:
+      "The advance payment is returned in full when the game comes back complete and in good condition.",
+    pricingTiers: [
+      {
+        title: "Games with retail price under 100 lei",
+        retail: "Retail under 100 lei",
+        advance: "Refundable advance: 50 lei",
+        daily: "Rental: 20 lei / day",
+        note: "Best for compact games and card titles.",
+      },
+      {
+        title: "Games with retail price over 100 lei",
+        retail: "Retail over 100 lei",
+        advance: "Refundable advance: 100 lei",
+        daily: "Rental: 35 lei / day",
+        note: "For larger games or titles with a higher retail value.",
+      },
+    ],
   },
   about: {
     metaTitle: "About",
     heroTitle: "About DiceZone",
     heroDescription:
-      "We believe the best team and learning experiences happen around a table — not a slide deck.",
+      "We believe the best team and learning experiences happen around a table, not a slide deck.",
     intro:
-      "DiceZone was founded to bring purposeful play to workplaces and classrooms in the {region}. We specialize in board games that strengthen communication, collaboration, and social awareness — then we facilitate sessions so every participant feels included.",
+      "DiceZone was founded to bring purposeful play to workplaces and classrooms in {region}. We specialize in board games that strengthen communication, collaboration, and social awareness, then we facilitate sessions so every participant feels included.",
     whatTitle: "What we do",
     whatItems: [
       "Corporate team-building with communication & social deduction games",
@@ -319,7 +350,7 @@ export const en: Dictionary = {
     approach2:
       "Whether you're planning an offsite, a school workshop, or a weekend rental, we're here to make it easy and genuinely fun.",
     photoCaption:
-      "Every session is built around the table — where conversation, laughter, and teamwork happen naturally.",
+      "Every session is built around the table, where conversation, laughter, and teamwork happen naturally.",
   },
   contact: {
     metaTitle: "Contact",
@@ -338,6 +369,8 @@ export const en: Dictionary = {
       { tag: "corporate", label: "Corporate" },
       { tag: "kids", label: "Kids" },
       { tag: "rentable", label: "Rentable" },
+      { tag: "rent-under-100", label: "Retail under 100 lei" },
+      { tag: "rent-over-100", label: "Retail over 100 lei" },
       { tag: "communication", label: "Communication" },
       { tag: "social-deduction", label: "Social deduction" },
     ],
@@ -347,6 +380,9 @@ export const en: Dictionary = {
     durationLabel: "Duration:",
     ageLabel: "Ages:",
     rentalLabel: "Rental:",
+    advancePaymentLabel: "Refundable advance:",
+    refundableAdvanceNote:
+      "The advance is returned when the game is brought back complete and in good condition.",
     corporateUse: "Use in corporate event",
     venueOnly: "This title is available in facilitated events only.",
     rentCta: "Rent this game",
@@ -364,7 +400,7 @@ export const en: Dictionary = {
     },
     "the-resistance": {
       description:
-        "Social deduction at its finest — loyal agents vs hidden spies. Builds trust, observation, and team discussion under pressure.",
+        "Social deduction at its finest: loyal agents vs hidden spies. Builds trust, observation, and team discussion under pressure.",
     },
     wavelength: {
       description:
@@ -376,7 +412,7 @@ export const en: Dictionary = {
     },
     "just-one": {
       description:
-        "Cooperative clue-giving with a twist — duplicate clues are discarded. Simple rules, big laughs, great for mixed experience levels.",
+        "Cooperative clue-giving with a twist: duplicate clues are discarded. Simple rules, big laughs, great for mixed experience levels.",
     },
     dixit: {
       description:
@@ -403,6 +439,18 @@ export const en: Dictionary = {
     },
     collectives9: {
       description: "A team-based game with fast communication, trivia, and creative challenges where players work together to score points.",
+    },
+    flip7: {
+      description: "Prepare to risk it all: flip cards, score points, and decide when to stop before you lose everything. Easy to learn, hard to put down.",
+    },
+    "port-royal": {
+      description: "Enter the world of trade and adventure, recruit a crew, gather treasures, and take risks to build your reputation ahead of your rivals.",
+    },
+    "the-mind": {
+      description: "Sync with each other without speaking, play every card at the perfect moment, and discover how well you can think as one team.",
+    },
+    "love-letter": {
+      description: "Read your opponents, deduce the cards they’re holding, and make every move count to eliminate rivals and win the princess’s favor. A fast-paced game of social deduction and bluffing.",
     },
   },
 };
