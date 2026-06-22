@@ -18,19 +18,19 @@ export function Wordmark({
         className
       )}
     >
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center transition-transform group-hover:scale-105">
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center transition-transform group-hover:scale-105">
         <Image
           src={onDark ? "/images/logo-white.webp" : "/images/logo-dark.webp"}
           alt={`${SITE_NAME} logo`}
-          width={40}
-          height={40}
-          className="h-10 w-10 object-contain"
+          width={56}
+          height={56}
+          className="h-14 w-14 object-contain"
           priority
         />
       </span>
       <span
         className={cn(
-          "text-2xl tracking-wide",
+          "text-3xl font-bold tracking-wide",
           onDark ? "text-surface-dark-foreground" : "text-primary"
         )}
         style={{ fontFamily: "var(--font-display)" }}

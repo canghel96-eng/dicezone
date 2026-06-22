@@ -16,7 +16,7 @@ const TILE_THEMES = [
     image: "/images/teambuilding.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(200 136 58 / 0.68), rgb(43 74 54 / 0.5))",
+      "linear-gradient(135deg, rgb(232 93 74 / 0.68), rgb(30 42 90 / 0.5))",
   },
   {
     bar: "bg-accent-bright",
@@ -27,29 +27,29 @@ const TILE_THEMES = [
     image: "/images/kids.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(143 190 154 / 0.56), rgb(43 74 54 / 0.56))",
+      "linear-gradient(135deg, rgb(230 180 75 / 0.56), rgb(30 42 90 / 0.56))",
   },
   {
     bar: "bg-cozy-sage",
     surface: "dz-hub-tile-emerald",
     panel: "bg-white/40",
-    title: "text-stone-950",
-    body: "text-stone-950/70",
+    title: "text-emerald-950",
+    body: "text-emerald-950/70",
     image: "/images/coffeshop.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(107 154 114 / 0.62), rgb(43 74 54 / 0.54))",
+      "linear-gradient(135deg, rgb(111 154 115 / 0.62), rgb(30 42 90 / 0.54))",
   },
   {
     bar: "bg-secondary",
     surface: "dz-hub-tile-sky",
-    panel: "bg-green-50/80",
-    title: "text-stone-950",
-    body: "text-stone-950/70",
+    panel: "bg-cyan-50/80",
+    title: "text-sky-950",
+    body: "text-sky-950/70",
     image: "/images/library.webp",
     imagePosition: "center",
     overlay:
-      "linear-gradient(135deg, rgb(43 74 54 / 0.68), rgb(200 136 58 / 0.42))",
+      "linear-gradient(135deg, rgb(30 42 90 / 0.68), rgb(232 93 74 / 0.42))",
   },
 ] as const;
 
