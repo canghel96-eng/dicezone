@@ -37,32 +37,32 @@
   --shadow-cozy-lg: 0 22px 54px -28px rgb(30 42 90 / 0.42);
 }
 
-/* Premium cafe palette: deep navy, coral, mustard, ivory, sand, and sage */
+/* Warm Espresso palette: dark roast, deep red, antique gold, aged parchment, olive */
 :root {
   --radius: 1rem;
-  --background: #f8f5ec;
-  --foreground: #4b5563;
-  --card: #efe8d8;
-  --card-foreground: #4b5563;
-  --popover: #f8f5ec;
-  --popover-foreground: #4b5563;
-  --primary: #1e2a5a;
-  --primary-foreground: #f8f5ec;
-  --secondary: #e6b44b;
-  --secondary-foreground: #1e2a5a;
-  --muted: #efe8d8;
-  --muted-foreground: #667085;
-  --accent: #e85d4a;
+  --background: #f6f0e4;
+  --foreground: #4d3d2d;
+  --card: #ede4d0;
+  --card-foreground: #4d3d2d;
+  --popover: #f6f0e4;
+  --popover-foreground: #4d3d2d;
+  --primary: #3d1f10;
+  --primary-foreground: #f6f0e4;
+  --secondary: #c9960c;
+  --secondary-foreground: #3d1f10;
+  --muted: #ede4d0;
+  --muted-foreground: #7a6a55;
+  --accent: #c0452b;
   --accent-foreground: #fff8f0;
-  --cozy-warm: #e6b44b;
-  --cozy-sage: #6f9a73;
-  --surface-dark: #1e2a5a;
-  --surface-dark-foreground: #f8f5ec;
-  --accent-bright: #e6b44b;
-  --destructive: #b94738;
-  --border: #d8cfbc;
-  --input: #ded4c0;
-  --ring: #e85d4a;
+  --cozy-warm: #c9960c;
+  --cozy-sage: #7a8c6e;
+  --surface-dark: #2a1208;
+  --surface-dark-foreground: #f6f0e4;
+  --accent-bright: #c9960c;
+  --destructive: #8f2e18;
+  --border: #d5c9b0;
+  --input: #cfc3a5;
+  --ring: #c0452b;
 }
 
 @layer base {
@@ -79,17 +79,17 @@
     background-image:
       radial-gradient(
         ellipse 120% 80% at 50% -20%,
-        rgb(230 180 75 / 0.16),
+        rgb(201 150 12 / 0.14),
         transparent 55%
       ),
       radial-gradient(
         circle at 100% 50%,
-        rgb(111 154 115 / 0.13),
+        rgb(122 140 110 / 0.11),
         transparent 40%
       ),
       radial-gradient(
         circle at 0% 80%,
-        rgb(232 93 74 / 0.1),
+        rgb(192 69 43 / 0.09),
         transparent 35%
       );
     background-attachment: fixed;
@@ -165,7 +165,7 @@
     @apply pointer-events-none absolute inset-0 opacity-30;
     background-image: radial-gradient(
       circle at 20% 50%,
-      rgb(248 245 236 / 0.18),
+      rgb(246 240 228 / 0.18),
       transparent 50%
     );
   }
@@ -174,7 +174,7 @@
     background-image:
       radial-gradient(
         circle at 1px 1px,
-        rgb(30 42 90 / 0.06) 1px,
+        rgb(61 31 16 / 0.06) 1px,
         transparent 0
       );
     background-size: 24px 24px;
@@ -184,15 +184,15 @@
     background:
       linear-gradient(
         135deg,
-        #f8f5ec 0%,
-        #efe8d8 48%,
-        rgb(111 154 115 / 0.2) 100%
+        #f6f0e4 0%,
+        #ede4d0 48%,
+        rgb(122 140 110 / 0.18) 100%
       );
   }
 
   .dz-page-hero::before {
     content: "";
-    @apply pointer-events-none absolute inset-x-4 bottom-0 top-6 rounded-[2rem] border border-white/60 bg-white/35 shadow-[0_24px_80px_-56px_rgb(30_42_90_/_0.45)] backdrop-blur-[2px] sm:inset-x-8 lg:inset-x-[max(2rem,calc((100vw-72rem)/2))];
+    @apply pointer-events-none absolute inset-x-4 bottom-0 top-6 rounded-[2rem] border border-white/60 bg-white/35 shadow-[0_24px_80px_-56px_rgb(61_31_16_/_0.4)] backdrop-blur-[2px] sm:inset-x-8 lg:inset-x-[max(2rem,calc((100vw-72rem)/2))];
   }
 
   .dz-page-hero::after {
@@ -201,12 +201,12 @@
     background:
       radial-gradient(
         ellipse 45% 55% at 12% 70%,
-        rgb(230 180 75 / 0.22),
+        rgb(201 150 12 / 0.2),
         transparent 70%
       ),
       radial-gradient(
         ellipse 45% 60% at 88% 20%,
-        rgb(232 93 74 / 0.13),
+        rgb(192 69 43 / 0.11),
         transparent 70%
       );
   }
@@ -230,26 +230,26 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(30 42 90 / 0.32) 0%,
-        rgb(30 42 90 / 0.52) 55%,
-        rgb(30 42 90 / 0.7) 100%
+        rgb(42 18 8 / 0.35) 0%,
+        rgb(42 18 8 / 0.55) 55%,
+        rgb(42 18 8 / 0.72) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(232 93 74 / 0.2),
+        rgb(192 69 43 / 0.22),
         transparent 60%
       ),
       radial-gradient(
         circle at 85% 80%,
-        rgb(111 154 115 / 0.16),
+        rgb(201 150 12 / 0.16),
         transparent 45%
       ),
       url("/images/homepage.webp"),
       linear-gradient(
         165deg,
-        #1e2a5a 0%,
-        #243366 45%,
-        #182247 100%
+        #2a1208 0%,
+        #3d1f10 45%,
+        #1e0c06 100%
       );
     background-position: center, center top, 85% 80%, center, center;
     background-repeat: no-repeat;
@@ -265,21 +265,21 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(30 42 90 / 0.38) 0%,
-        rgb(30 42 90 / 0.56) 55%,
-        rgb(30 42 90 / 0.72) 100%
+        rgb(42 18 8 / 0.40) 0%,
+        rgb(42 18 8 / 0.58) 55%,
+        rgb(42 18 8 / 0.74) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(232 93 74 / 0.18),
+        rgb(192 69 43 / 0.2),
         transparent 60%
       ),
       url("/images/teambuilding.webp"),
       linear-gradient(
         165deg,
-        #1e2a5a 0%,
-        #243366 45%,
-        #182247 100%
+        #2a1208 0%,
+        #3d1f10 45%,
+        #1e0c06 100%
       );
     background-position: center, center top, center, center;
     background-size: cover, cover, cover, cover;
@@ -289,26 +289,26 @@
     background-image:
       linear-gradient(
         180deg,
-        rgb(30 42 90 / 0.28) 0%,
-        rgb(30 42 90 / 0.48) 55%,
-        rgb(30 42 90 / 0.66) 100%
+        rgb(42 18 8 / 0.30) 0%,
+        rgb(42 18 8 / 0.50) 55%,
+        rgb(42 18 8 / 0.68) 100%
       ),
       radial-gradient(
         ellipse 90% 70% at 50% 0%,
-        rgb(230 180 75 / 0.28),
+        rgb(201 150 12 / 0.28),
         transparent 60%
       ),
       radial-gradient(
         circle at 80% 85%,
-        rgb(111 154 115 / 0.18),
+        rgb(122 140 110 / 0.18),
         transparent 45%
       ),
       url("/images/kids.webp"),
       linear-gradient(
         165deg,
-        #1e2a5a 0%,
-        #243366 45%,
-        #182247 100%
+        #2a1208 0%,
+        #3d1f10 45%,
+        #1e0c06 100%
       );
     background-position: center, center top, 80% 85%, center top, center;
     background-size: cover, cover, cover, cover, cover;
@@ -389,38 +389,38 @@
   }
 
   .dz-hub-tile-image-panel {
-    border: 1px solid rgb(248 245 236 / 0.24);
+    border: 1px solid rgb(246 240 228 / 0.24);
     background: linear-gradient(
       180deg,
-      rgb(30 42 90 / 0.34),
-      rgb(30 42 90 / 0.48)
+      rgb(61 31 16 / 0.34),
+      rgb(61 31 16 / 0.50)
     );
-    box-shadow: 0 18px 40px -24px rgb(30 42 90 / 0.65);
+    box-shadow: 0 18px 40px -24px rgb(42 18 8 / 0.65);
   }
 
   .dz-hub-tile-image-text {
     color: white !important;
-    text-shadow: 0 2px 10px rgb(30 42 90 / 0.9);
+    text-shadow: 0 2px 10px rgb(42 18 8 / 0.9);
   }
 
   .dz-hub-tile-rose {
-    border-color: rgb(232 93 74 / 0.28);
-    background: linear-gradient(135deg, rgb(232 93 74 / 0.18), #efe8d8);
+    border-color: rgb(192 69 43 / 0.28);
+    background: linear-gradient(135deg, rgb(192 69 43 / 0.16), #ede4d0);
   }
 
   .dz-hub-tile-amber {
-    border-color: rgb(230 180 75 / 0.35);
-    background: linear-gradient(135deg, rgb(230 180 75 / 0.22), #f8f5ec);
+    border-color: rgb(201 150 12 / 0.35);
+    background: linear-gradient(135deg, rgb(201 150 12 / 0.2), #f6f0e4);
   }
 
   .dz-hub-tile-emerald {
-    border-color: rgb(111 154 115 / 0.32);
-    background: linear-gradient(135deg, rgb(111 154 115 / 0.18), #efe8d8);
+    border-color: rgb(122 140 110 / 0.32);
+    background: linear-gradient(135deg, rgb(122 140 110 / 0.18), #ede4d0);
   }
 
   .dz-hub-tile-sky {
-    border-color: rgb(30 42 90 / 0.22);
-    background: linear-gradient(135deg, rgb(30 42 90 / 0.12), #f8f5ec);
+    border-color: rgb(61 31 16 / 0.22);
+    background: linear-gradient(135deg, rgb(61 31 16 / 0.10), #f6f0e4);
   }
 
   .dz-offerings-grid {
@@ -527,15 +527,15 @@
   }
 
   .dz-step-card-0 {
-    border-left-color: #e85d4a;
+    border-left-color: #c0452b;
   }
 
   .dz-step-card-1 {
-    border-left-color: #e6b44b;
+    border-left-color: #c9960c;
   }
 
   .dz-step-card-2 {
-    border-left-color: #6f9a73;
+    border-left-color: #7a8c6e;
   }
 
   .dz-site-header {
@@ -547,7 +547,7 @@
   }
 
   .dz-btn-hero {
-    @apply justify-center rounded-full bg-accent px-6 text-center font-bold uppercase tracking-wide text-accent-foreground shadow-[0_12px_30px_-18px_rgb(30_42_90_/_0.45)] transition-all hover:bg-[#cf4f3f] hover:shadow-[0_18px_40px_-22px_rgb(30_42_90_/_0.5)] active:scale-[0.98] sm:px-8;
+    @apply justify-center rounded-full bg-accent px-6 text-center font-bold uppercase tracking-wide text-accent-foreground shadow-[0_12px_30px_-18px_rgb(61_31_16_/_0.45)] transition-all hover:bg-[#a33820] hover:shadow-[0_18px_40px_-22px_rgb(61_31_16_/_0.5)] active:scale-[0.98] sm:px-8;
     min-width: min(18rem, 100%);
     max-width: 100%;
   }
@@ -582,14 +582,14 @@
     text-decoration: none;
     background: linear-gradient(
       180deg,
-      #f8f5ec 0%,
-      #efe8d8 100%
+      #f6f0e4 0%,
+      #ede4d0 100%
     );
-    border: 1px solid rgb(216 207 188 / 0.95);
+    border: 1px solid rgb(213 201 176 / 0.95);
     border-radius: 9999px;
     box-shadow:
-      0 1px 2px rgb(30 42 90 / 0.08),
-      inset 0 1px 0 rgb(248 245 236 / 0.75);
+      0 1px 2px rgb(61 31 16 / 0.08),
+      inset 0 1px 0 rgb(246 240 228 / 0.75);
     transition:
       transform 0.2s ease,
       box-shadow 0.2s ease,
@@ -601,20 +601,20 @@
   .cozy-nav-btn:hover {
     transform: translateY(-1px);
     color: var(--accent);
-    border-color: rgb(232 93 74 / 0.35);
+    border-color: rgb(192 69 43 / 0.35);
     background: linear-gradient(
       180deg,
-      #f8f5ec 0%,
-      rgb(230 180 75 / 0.22) 100%
+      #f6f0e4 0%,
+      rgb(201 150 12 / 0.2) 100%
     );
     box-shadow:
-      0 4px 12px rgb(30 42 90 / 0.12),
-      inset 0 1px 0 rgb(248 245 236 / 0.8);
+      0 4px 12px rgb(61 31 16 / 0.12),
+      inset 0 1px 0 rgb(246 240 228 / 0.8);
   }
 
   .cozy-nav-btn:active {
     transform: translateY(0);
-    box-shadow: 0 1px 2px rgb(30 42 90 / 0.1);
+    box-shadow: 0 1px 2px rgb(61 31 16 / 0.1);
   }
 
   .cozy-nav-btn:focus-visible {
@@ -624,46 +624,46 @@
 
   .cozy-nav-btn-active {
     color: var(--primary-foreground);
-    border-color: #cf4f3f;
+    border-color: #a33820;
     background: linear-gradient(
       180deg,
-      #e85d4a 0%,
-      #cf4f3f 100%
+      #c0452b 0%,
+      #a33820 100%
     );
     box-shadow:
-      0 2px 8px rgb(30 42 90 / 0.18),
-      inset 0 1px 0 rgb(248 245 236 / 0.18);
+      0 2px 8px rgb(61 31 16 / 0.18),
+      inset 0 1px 0 rgb(246 240 228 / 0.18);
   }
 
   .cozy-nav-btn-active:hover {
     color: var(--primary-foreground);
-    border-color: #b94738;
+    border-color: #8f2e18;
     background: linear-gradient(
       180deg,
-      #df5746 0%,
-      #b94738 100%
+      #b53d26 0%,
+      #8f2e18 100%
     );
   }
 
   .cozy-nav-btn-primary {
     color: var(--primary-foreground);
-    border-color: #cf4f3f;
+    border-color: #a33820;
     background: linear-gradient(
       180deg,
-      #e85d4a 0%,
-      #cf4f3f 100%
+      #c0452b 0%,
+      #a33820 100%
     );
     box-shadow:
-      0 2px 8px rgb(30 42 90 / 0.18),
-      inset 0 1px 0 rgb(248 245 236 / 0.16);
+      0 2px 8px rgb(61 31 16 / 0.18),
+      inset 0 1px 0 rgb(246 240 228 / 0.16);
   }
 
   .cozy-nav-btn-primary:hover {
     color: var(--primary-foreground);
     transform: translateY(-1px);
     box-shadow:
-      0 4px 14px rgb(30 42 90 / 0.22),
-      inset 0 1px 0 rgb(248 245 236 / 0.16);
+      0 4px 14px rgb(61 31 16 / 0.22),
+      inset 0 1px 0 rgb(246 240 228 / 0.16);
   }
 
   .dz-nav-link {
@@ -675,6 +675,6 @@
   }
 
   .dz-header-cta {
-    @apply rounded-full bg-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-accent-foreground shadow-[0_10px_24px_-18px_rgb(30_42_90_/_0.5)] transition-all hover:bg-[#cf4f3f] hover:shadow-[0_14px_28px_-18px_rgb(30_42_90_/_0.55)];
+    @apply rounded-full bg-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-accent-foreground shadow-[0_10px_24px_-18px_rgb(61_31_16_/_0.5)] transition-all hover:bg-[#a33820] hover:shadow-[0_14px_28px_-18px_rgb(61_31_16_/_0.55)];
   }
 }
