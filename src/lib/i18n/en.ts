@@ -357,6 +357,7 @@ export const en: Dictionary = {
     founderP1GameNames: "Rummy, Activity or even Catan",
     founderP2Mechanics: "A Heavy Euro with worker placement, engine building, drafting, resource management, bluffing, area control, blah blah blah",
     founderP2Translation: "(translation: a very complicated game whose rulebook reads like a PhD thesis)",
+    photoCaption: "Ciprian, founder of DiceZone",
   },
   contact: {
     metaTitle: "Contact",
