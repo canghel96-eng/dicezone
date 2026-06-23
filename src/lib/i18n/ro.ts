@@ -334,23 +334,19 @@ export const ro: Dictionary = {
     metaTitle: "Despre noi",
     heroTitle: "Despre DiceZone",
     heroDescription:
-      "Credem că cele mai bune experiențe de echipă și de învățare se întâmplă în jurul unei mese, nu al unui set de slide-uri.",
-    intro:
-      "DiceZone a fost creat pentru a aduce joc cu sens la locurile de muncă și în sălile de clasă din {region}. Ne specializăm pe jocuri care întăresc comunicarea, colaborarea și conștientizarea socială, apoi facilităm sesiunile astfel încât fiecare participant să se simtă inclus.",
-    whatTitle: "Ce facem",
-    whatItems: [
-      "Team building corporate cu jocuri de comunicare și deducție socială",
-      "Evenimente educative cu jocuri de societate pentru copii și școli",
-      "Biblioteci de jocuri la locații partenere (în curând)",
-      "Închiriere din biblioteca noastră organizată",
+      "Credem că cele mai bune experiențe se întâmplă în jurul unei mese.",
+    founderParagraphs: [
+      "Salut, numele meu este Ciprian și una dintre cele mai mari pasiuni ale mele sunt jocurile de societate. Fiind o activitate de nișă, nu a fost niciodată ușor să găsesc parteneri de joacă.",
+      "Pentru unii, \u201ejoaca\u201d este o activitate pentru copii. Pentru alții, o seară de jocuri înseamnă o sesiune pe cinste de Rummy, Activity sau poate chiar Catan, dacă își doresc ceva mai serios. Aceasta este plaja din care cei pasionați încearcă să-și găsească parteneri: în familie, printre prieteni, cunoștințe, vecini, la coadă la Mega. Oriunde, oricând, încercăm să formăm acel grup perfect pentru renumitul GameNight.",
+      "La un moment dat se întâmplă să reușim. Formăm un grup, ne așezăm la masă și facem din nou aceeași greșeală pe care o repetăm mereu: punem pe masă jocul nostru preferat, jocul care stă pe raft de luni de zile pentru că nu găsim jucători. Un Heavy Euro cu mecanici de worker placement, engine building, drafting, resource management, bluffing, area control, bla bla bla (traducere: un joc foarte greu, al cărui regulament e o lucrare de doctorat). Uităm că cei cărora le-am promis o seară de distracție nu au sute de jocuri jucate în ultimii ani. Nu este nimic distractiv în a asculta 30 de minute de explicații pe care oricum nu le înțelegi, pentru ca apoi să treci prin ore și ore de agonie, sute de decizii fără noimă și zeci de reguli repetate la infinit. Toți vor pleca acasă convinși că jocurile de societate nu sunt pentru ei. Poate că nu era jocul greșit pentru ei, dar cu siguranță e greșită alegerea unui astfel de joc ca prim joc.",
+      "O altă situație foarte des întâlnită apare atunci când cineva chiar este curios și își dorește să înceapă acest hobby. Suntem deja în punctul în care, asemenea cărților, filmelor sau altor forme de artă și divertisment, este imposibil să poți juca toate jocurile existente într-o singură viață. Pentru cineva nou, asta se transformă foarte ușor în paralizie de alegere. De unde începi când există zeci de jocuri pentru începători recomandate de zeci de oameni diferiți, fiecare jurând că \u201eăsta\u201d este jocul perfect pentru tine?",
+      "Prin proiectul DiceZone ne propunem să depășim toate aceste probleme. Nu venim cu cea mai grea colecție de jocuri, deși avem și din alea, pentru cei care sunt pregătiți. Facem totul treptat. Începem cu jocuri introductive, ușor de explicat și înțeles, la care te distrezi din prima tură. Cu fiecare joc nou pe care îl propunem schimbăm mecanicile, și la fiecare ediție creștem puțin dificultatea, pentru ca în timp să aflăm împreună ce înseamnă worker placement, drafting sau deduction jucând, fără a ne simți copleșiți.",
+      "DiceZone pornește din dorința ca jocurile de societate să nu fie doar un cerc închis, între cunoscători.",
     ],
-    approachTitle: "Abordarea noastră",
-    approach1:
-      "Fiecare eveniment este facilitat de cineva care cunoaște jocurile și obiectivele tale. Ne ocupăm de setup, reguli, ritm și un scurt debrief care leagă jocul de munca în echipă sau de rezultatele educaționale.",
-    approach2:
-      "Fie că planifici un offsite, un atelier școlar sau o închiriere de weekend, suntem aici să fie simplu și cu adevărat distractiv.",
-    photoCaption:
-      "Fiecare sesiune se construiește în jurul mesei, unde conversația, râsul și munca în echipă apar natural.",
+    founderP1GameNames: "Rummy, Activity sau poate chiar Catan",
+    founderP2Mechanics: "Un Heavy Euro cu mecanici de worker placement, engine building, drafting, resource management, bluffing, area control, bla bla bla",
+    founderP2Translation: "(traducere: un joc foarte greu, al cărui regulament e o lucrare de doctorat)",
+
   },
   contact: {
     metaTitle: "Contact",
@@ -451,6 +447,189 @@ export const ro: Dictionary = {
     },
     "love-letter": {
       description: "Citește intențiile adversarilor, dedu ce cărți ascund și folosește fiecare alegere cu grijă pentru a elimina rivalii și a ajunge primul la inima prințesei. O experiență rapidă de deducție socială și bluff.",
+    },
+    "sheriff-of-nottingham": {
+      description: "Un joc de negociere și cacealma în care încerci să introduci mărfuri în oraș, păcălindu-i pe ceilalți jucători și evitând controalele șerifului.",
+    },
+    "7wonders": {
+      description: "Construiește-ți propria civilizație, colectează resurse și ridică minuni impresionante pentru a obține cele mai multe puncte.",
+    },
+    "skull": {
+      description: "Blufează, asumă-ți riscuri și citește intențiile adversarilor pentru a rămâne în joc și a câștiga cele mai multe puncte.",
+    },
+    "zenith": {
+      description: "Condu-ți facțiunea spre victorie, influențează planete și ia decizii strategice pentru a câștiga controlul asupra galaxiei.",
+    },
+    "toy-battle": {
+      description: "Condu-ți armata de jucării pe câmpul de luptă, ocupă poziții-cheie și folosește tactica potrivită pentru a-ți învinge adversarii.",
+    },
+    "my-gold-mine": {
+      description: "Sapă după comori, evită capcanele și decide momentul potrivit să te retragi înainte să pierzi tot ce ai adunat.",
+    },
+    "welcome-to-the-dungeon": {
+      description: "Intră în temniță, înfruntă monștri și decide cât de mult risc îți asumi pentru a fi ultimul aventurier rămas în joc.",
+    },
+    "alias-party": {
+      description: "Explică, mimează sau descrie cuvinte și expresii pentru a-ți ajuta echipa să ghicească cât mai multe înainte să expire timpul.",
+    },
+    "coup": {
+      description: "Blufează, manipulează și elimină-ți adversarii folosindu-ți influența și abilitățile speciale pentru a rămâne ultimul jucător în joc.",
+    },
+    "coatl": {
+      description: "Construiește un șarpe sacru cât mai impresionant, combină plăci colorate și adună decorațiuni pentru a obține cele mai multe puncte.",
+    },
+    "one-night-ultimate-werewolf": {
+      description: "Folosește-ți rolul în secret, blufează convingător și descoperă cine sunt vârcolacii înainte să fie prea târziu.",
+    },
+    "marvel-united": {
+      description: "Alege-ți eroul preferat, colaborează cu echipa și folosește-ți puterile pentru a opri planurile malefice ale inamicului.",
+    },
+    "activity": {
+      description: "Mimează, desenează sau descrie cuvinte într-o cursă contra cronometru. Clasicul joc de societate care garantează râs și amintiri.",
+    },
+    "angel-fury": {
+      description: "Îngeri și demoni se înfruntă în lumi paralele. Un joc cooperativ de strategie cu o mecanică unică de mișcare simultană pe două planuri.",
+    },
+    "arkham-horror-tcg": {
+      description: "Joc de cărți cooperativ cu narative ramificate ambientate în universul lui H.P. Lovecraft. Deciziile tale schimbă povestea de la o partida la alta.",
+    },
+    "battlelore": {
+      description: "Comandă armate medievale și creaturi fantastice pe câmpul de bătălie. Tactici simple, decizii profunde într-un duel strategic față în față.",
+    },
+    "binding-of-isaac-four-souls": {
+      description: "Bazat pe jocul video indie cult, Four Souls aduce în joc loot, monștri și trădare. Distracție haotică și imprevizibilă pentru fani.",
+    },
+    "bloodborne-card-game": {
+      description: "Vânătorii explorează catacombele și înfruntă monștri înspăimântători, dar lăcomia pentru loot poate să-i coste tot. Cooperare cu un strop de trădare.",
+    },
+    "brew-crafters": {
+      description: "Administrează propria fabrică de bere artizanală: gestionează resurse, angajează muncitori și perfecționează rețetele pentru a cuceri piața locală.",
+    },
+    "captain-marvel-secret-skrulls": {
+      description: "Skrullii s-au infiltrat în echipă! Găsește impostori și salvează ziua în acest joc de deducție socială cu tematică Marvel.",
+    },
+    "century-big-box": {
+      description: "Colecție completă a seriei Century: tranzacționează condimente, construiește-ți ruta și dezvoltă un motor comercial elegant. Accesibil și strategic.",
+    },
+    "chronicles-of-crime": {
+      description: "Rezolvă cazuri polițiste folosind o aplicație mobilă și cărți cu coduri QR. Investigații imersive cu o poveste ramificată și multiple finaluri.",
+    },
+    "citadels": {
+      description: "Construiește cel mai impresionant district alegând roluri secrete în fiecare rând. Bluff, strategie și adaptare rapidă la acțiunile adversarilor.",
+    },
+    "codenames-duet": {
+      description: "Varianta cooperativă pentru doi jucători din seria Codenames. Lucrați împreună pentru a identifica toți agenții fără să activați asasinul.",
+    },
+    "concordia": {
+      description: "Extinde o rețea comercială în Imperiul Roman, gestionează resurse și construiește o strategie pe termen lung prin cărți de acțiune.",
+    },
+    "destinies": {
+      description: "Joc de aventură ghidat de o aplicație mobilă în care alegerile tale modelează o poveste unică. Explorare, deducție și consecințe reale.",
+    },
+    "disney-villainous": {
+      description: "Fiecare jucător devine un villain Disney iconic cu un obiectiv unic. Strategii asimetrice, sabotaj și o temă vizuală spectaculoasă.",
+    },
+    "disney-villainous-wicked-to-the-core": {
+      description: "Extinde universul Disney Villainous cu Evil Queen, Hades și Dr. Facilier. Noi mecanici și obiective unice pentru fiecare villain.",
+    },
+    "disney-villainous-evil-comes-prepared": {
+      description: "Scar, Yzma și Ratigan intră în joc cu noi provocări strategice. Compatibil cu celelalte seturi din seria Villainous.",
+    },
+    "disney-villainous-perfectly-wretched": {
+      description: "Cruella De Vil, Pete și Mother Gothel aduc noi mecanici în universul Villainous. Fiecare villain joacă complet diferit.",
+    },
+    "disney-villainous-despicable-plots": {
+      description: "Dr. Drakken, Gaston și Lady Tremaine completează colecția. Un set standalone care se poate combina cu orice alt set Villainous.",
+    },
+    "dungeon-mayhem": {
+      description: "Patru eroi D&D se înfruntă într-o luptă rapidă și haotică. Cărți pline de acțiune, efecte spectaculoase și partide sub 10 minute.",
+    },
+    "dungeon-mayhem-monster-madness": {
+      description: "Extinde Dungeon Mayhem cu monștri jucabili. Până la 6 jucători, noi abilități și haos garantat la fiecare partidă.",
+    },
+    "elder-sign": {
+      description: "Investigatorii explorează un muzeu blestemat și încearcă să prevină apariția unui Zeu Vechi. Cooperare contra cronometru în universul Arkham.",
+    },
+    "everdell": {
+      description: "Construiește un orășel de creaturi drăgălașe plasând muncitori și jucând cărți. Vizual impresionant, strategic accesibil și extrem de satisfăcător.",
+    },
+    "gizmos": {
+      description: "Construiește un motor de bile și gadgeturi care se activează în lanț. Un joc de engine-building elegant, rapid și plin de satisfacție.",
+    },
+    "gloom": {
+      description: "Aduce cât mai multă nenorocire familiei tale înainte ca toți să moară. Cărți transparente care se suprapun și o narațiune absurdă și amuzantă.",
+    },
+    "god-of-war-card-game": {
+      description: "Kratos și aliații săi înfruntă zeii nordici în acest joc cooperativ bazat pe seria video. Luptă intensă, decizii grele și poveste epică.",
+    },
+    "grimm-forest": {
+      description: "Construiește case de paie, lemn sau cărămidă înainte ca lupul să ajungă. Un joc strategic cu tematică din basme, perfect pentru familie.",
+    },
+    "hansa-teutonica": {
+      description: "Extinde rețeaua comercială a Ligii Hanseatice prin Germania medievală. Strategie pură de arie și control al rutelor comerciale.",
+    },
+    "istanbul-big-box": {
+      description: "Traversează bazarul din Istanbul cu ajutor de la asistenți și adună rubine pentru a câștiga. O colecție completă cu toate extensiile.",
+    },
+    "legendary-marvel": {
+      description: "Construiește o punte de eroi Marvel și cooperează pentru a înfrânge un villain puternic. Deckbuilding accesibil cu o tematică iubită de toți.",
+    },
+    "mansions-of-madness": {
+      description: "Explorează o casă bântuită ghidat de o aplicație mobilă. Investigatori contra orori cosmice într-o aventură cooperativă cu povești unice.",
+    },
+    "marvel-champions": {
+      description: "Joc de cărți cooperativ în care fiecare erou Marvel are o punte unică. Înfruntă villainii în partide de 45–90 de minute pline de acțiune.",
+    },
+    "monopoly-cheaters": {
+      description: "Varianta Monopoly care încurajează oficial înșelăciunea. Fură bani, mută piese fără voie și evita să fii prins de ceilalți jucători.",
+    },
+    "munchkin": {
+      description: "Doboară monștri, jefuiește comori și sabotează-ți prietenii în această parodie a dungeon-crawlerelor. Haos amuzant garantat.",
+    },
+    "paladins-west-kingdom": {
+      description: "Apără regatul medieval plasând muncitori, construind clădiri și gestionând resursele cu atenție. Un eurogame complex și profund satisfăcător.",
+    },
+    "pass-the-bomb": {
+      description: "Găsește rapid cuvinte cu anumite litere înainte să explodeze bomba. Rapid, frenetic și ideal pentru grup.",
+    },
+    "prodigals-club": {
+      description: "Pierde averea, reputația și mandatul politic cât mai eficient posibil. Un joc strategic cu o premiză inversată, unic în genul său.",
+    },
+    "regatul-lui-enroh": {
+      description: "Joc românesc de strategie față în față cu mecanici originale. Construiește-ți regatul și înfrânge-ți adversarul în această lume fantastică.",
+    },
+    "rise-of-queensdale": {
+      description: "Joc legacy cu o poveste ramificată în care deciziile dintr-o partidă influențează viitoarele sesiuni. Construiește un regat de la zero.",
+    },
+    "root": {
+      description: "Patru facțiuni asimetrice se luptă pentru controlul pădurii. Fiecare joacă complet diferit — unul dintre cele mai inovatoare jocuri de strategie.",
+    },
+    "slay-the-spire": {
+      description: "Adaptare a jocului video cult: construiește o punte, înfruntă monștri și urci spre vârful turnului. Cooperativ, strategic și reluabil la infinit.",
+    },
+    "star-realms": {
+      description: "Duel de deckbuilding în spațiu: cumpără nave, construiește-ți flota și distruge baza adversarului. Rapid, profund și perfect pentru doi jucători.",
+    },
+    "stone-age": {
+      description: "Gestionează o tribul preistoric: plasează muncitori, colectează resurse și construiește unelte pentru a avansa civilizația mai rapid decât rivalii.",
+    },
+    "stygian-society": {
+      description: "Rezolvă mistere în societăți secrete exploatând mecanici de deducție și cooperare. O experiență de investigație tematică pentru 1–4 jucători.",
+    },
+    "tekhenu": {
+      description: "Ridică un obelisc în Egipt antic balansând zeii soarelui, gestionând resurse și construind monumente. Unul dintre cele mai complexe eurogame-uri.",
+    },
+    "terraforming-mars": {
+      description: "Corporații concurează pentru a transforma Marte în planetă locuibilă. Motoare de cărți complexe, engine-building profund și rejucabilitate enormă.",
+    },
+    "thanos-rising": {
+      description: "Eroii Marvel cooperează pentru a înfrânge pe Thanos înainte să adune toate Pietrele Infinitului. Tensionat, tematic și accesibil.",
+    },
+    "this-war-of-mine": {
+      description: "Supraviețuiește într-un oraș asediat luând decizii morale grele. O experiență cooperativă cu tematică serioasă, bazată pe jocul video.",
+    },
+    "unconscious-mind": {
+      description: "Explorează subconștientul freudian construind rețele neuronale și interpretând vise. Un eurogame dens și original cu o tematică cu totul aparte.",
     },
   },
 };

@@ -556,24 +556,24 @@
 
   .dz-logo-stroke-gold {
     filter:
-      drop-shadow(2px 0 0 rgb(201 152 56 / 0.8))
-      drop-shadow(-2px 0 0 rgb(201 152 56 / 0.8))
-      drop-shadow(0 2px 0 rgb(201 152 56 / 0.8))
-      drop-shadow(0 -2px 0 rgb(201 152 56 / 0.8))
-      drop-shadow(1.5px 1.5px 0 rgb(201 152 56 / 0.6))
-      drop-shadow(-1.5px -1.5px 0 rgb(201 152 56 / 0.6))
-      drop-shadow(1.5px -1.5px 0 rgb(201 152 56 / 0.6))
-      drop-shadow(-1.5px 1.5px 0 rgb(201 152 56 / 0.6));
+      drop-shadow(1px 0 0 rgb(201 152 56 / 0.8))
+      drop-shadow(-1px 0 0 rgb(201 152 56 / 0.8))
+      drop-shadow(0 1px 0 rgb(201 152 56 / 0.8))
+      drop-shadow(0 -1px 0 rgb(201 152 56 / 0.8))
+      drop-shadow(0.75px 0.75px 0 rgb(201 152 56 / 0.6))
+      drop-shadow(-0.75px -0.75px 0 rgb(201 152 56 / 0.6))
+      drop-shadow(0.75px -0.75px 0 rgb(201 152 56 / 0.6))
+      drop-shadow(-0.75px 0.75px 0 rgb(201 152 56 / 0.6));
   }
 
   .dz-logo-stroke-dark {
     filter:
-      drop-shadow(2px 0 0 rgb(28 61 37 / 0.5))
-      drop-shadow(-2px 0 0 rgb(28 61 37 / 0.5))
-      drop-shadow(0 2px 0 rgb(28 61 37 / 0.5))
-      drop-shadow(0 -2px 0 rgb(28 61 37 / 0.5))
-      drop-shadow(1.5px 1.5px 0 rgb(28 61 37 / 0.35))
-      drop-shadow(-1.5px -1.5px 0 rgb(28 61 37 / 0.35));
+      drop-shadow(1px 0 0 rgb(28 61 37 / 0.5))
+      drop-shadow(-1px 0 0 rgb(28 61 37 / 0.5))
+      drop-shadow(0 1px 0 rgb(28 61 37 / 0.5))
+      drop-shadow(0 -1px 0 rgb(28 61 37 / 0.5))
+      drop-shadow(0.75px 0.75px 0 rgb(28 61 37 / 0.35))
+      drop-shadow(-0.75px -0.75px 0 rgb(28 61 37 / 0.35));
   }
 
   .dz-site-header {

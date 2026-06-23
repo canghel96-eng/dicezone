@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PageHero } from "@/components/shared/page-hero";
 import { Box } from "@/components/ui/box";
-import { formatRegion, getDictionary } from "@/lib/i18n";
+import { getDictionary } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n/server";
 
 export async function generateMetadata() {
@@ -23,58 +23,55 @@ export default async function AboutPage() {
 
       <section className="cozy-section">
         <Box className="cozy-container">
-          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="mx-auto max-w-2xl">
 
             {/* Founder photo */}
-            <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
-              <div className="overflow-hidden rounded-3xl border border-border/60 shadow-[var(--shadow-cozy-lg)]">
-                <Image
-                  src="/images/founder.webp"
-                  alt="Founder of DiceZone with board games"
-                  width={768}
-                  height={1024}
-                  className="w-full object-cover"
-                  priority
-                />
-              </div>
-              <p className="mt-3 text-center text-sm italic text-muted-foreground">
-                {d.about.photoCaption}
-              </p>
+            <div className="overflow-hidden rounded-3xl border border-border/60 shadow-[var(--shadow-cozy-lg)]">
+              <Image
+                src="/images/founder.webp"
+                alt="Founder of DiceZone with board games"
+                width={768}
+                height={1024}
+                className="max-h-[32rem] w-full object-cover object-[50%_80%]"
+                priority
+              />
             </div>
+            <p className="mb-10 mt-3 text-center text-sm italic text-muted-foreground">
+              {d.about.photoCaption}
+            </p>
 
-            {/* Content */}
-            <div className="space-y-8">
-              <p className="text-lg leading-relaxed text-foreground">
-                {formatRegion(d.about.intro, d.siteRegion)}
-              </p>
+            {/* Founder story */}
+            <div className="space-y-5">
+              {d.about.founderParagraphs.map((paragraph, i) => {
+                const base = "font-semibold leading-relaxed text-muted-foreground";
+                const last = "font-serif text-base font-semibold italic leading-relaxed text-accent";
 
-              <div>
-                <h2 className="font-serif text-xl font-semibold text-foreground">
-                  {d.about.whatTitle}
-                </h2>
-                <ul className="mt-4 space-y-2">
-                  {d.about.whatItems.map((item) => (
-                    <li key={item} className="flex items-start gap-2 leading-relaxed text-muted-foreground">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                if (i === 1) {
+                  const [p1Before, p1After] = paragraph.split(d.about.founderP1GameNames);
+                  return (
+                    <p key={i} className={base}>
+                      {p1Before}<em>{d.about.founderP1GameNames}</em>{p1After}
+                    </p>
+                  );
+                }
 
-              <div>
-                <h2 className="font-serif text-xl font-semibold text-foreground">
-                  {d.about.approachTitle}
-                </h2>
-                <div className="mt-4 space-y-4">
-                  <p className="leading-relaxed text-muted-foreground">
-                    {d.about.approach1}
+                if (i === 2) {
+                  const [p2Before, p2Rest] = paragraph.split(d.about.founderP2Mechanics);
+                  const [p2Middle, p2After] = (p2Rest ?? "").split(d.about.founderP2Translation);
+                  return (
+                    <p key={i} className={base}>
+                      {p2Before}<em>{d.about.founderP2Mechanics}</em>{p2Middle}
+                      <strong>{d.about.founderP2Translation}</strong>{p2After}
+                    </p>
+                  );
+                }
+
+                return (
+                  <p key={i} className={i === d.about.founderParagraphs.length - 1 ? last : base}>
+                    {paragraph}
                   </p>
-                  <p className="leading-relaxed text-muted-foreground">
-                    {d.about.approach2}
-                  </p>
-                </div>
-              </div>
+                );
+              })}
             </div>
 
           </div>

@@ -13,7 +13,7 @@ export async function Header() {
 
   return (
     <header className="dz-site-header top-0 z-[100] xl:sticky">
-      <Box className="cozy-container flex min-h-[4.25rem] items-center justify-between gap-x-3 gap-y-3 py-3 xl:h-[4.25rem] xl:flex-nowrap xl:gap-x-4 xl:py-0">
+      <Box className="cozy-container flex items-center justify-between gap-x-3 gap-y-3 py-2 xl:flex-nowrap xl:gap-x-4">
         <Wordmark onDark />
 
         <MainNav

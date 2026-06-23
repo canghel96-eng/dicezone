@@ -16,7 +16,19 @@ export type GameTag =
   | "rentable"
   | "rent-under-100"
   | "rent-over-100"
-  | "venue-only";
+  | "venue-only"
+  | "card-game"
+  | "engine-building"
+  | "resource-management"
+  | "area-control"
+  | "1v1"
+  | "2-player"
+  | "3-player"
+  | "4-player"
+  | "5-player"
+  | "6-player"
+  | "bluffing"
+  | "card-drafting";
 
 export interface Game {
   slug: string;

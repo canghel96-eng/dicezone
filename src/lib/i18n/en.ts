@@ -334,23 +334,18 @@ export const en: Dictionary = {
     metaTitle: "About",
     heroTitle: "About DiceZone",
     heroDescription:
-      "We believe the best team and learning experiences happen around a table, not a slide deck.",
-    intro:
-      "DiceZone was founded to bring purposeful play to workplaces and classrooms in {region}. We specialize in board games that strengthen communication, collaboration, and social awareness, then we facilitate sessions so every participant feels included.",
-    whatTitle: "What we do",
-    whatItems: [
-      "Corporate team-building with communication & social deduction games",
-      "Educational board game events for kids and schools",
-      "Partner venue game libraries (launching soon)",
-      "Game rentals from our curated library",
+      "We believe the best experiences happen around a table.",
+    founderParagraphs: [
+      "Hi, my name is Ciprian and one of my greatest passions is board games. Being a niche activity, it has never been easy to find people to play with.",
+      "For some, \"play\" is something kids do. For others, a game night means a proper session of Rummy, Activity, or maybe even Catan if they're feeling adventurous. This is the pool from which enthusiasts try to find partners — within family, among friends, acquaintances, neighbours, in line at the supermarket. Anywhere, anytime, we try to put together that perfect group for the legendary GameNight.",
+      "At some point it actually works. We gather a group, sit down at the table, and make the same mistake we always make: we put our favourite game on the table, the one that's been sitting on the shelf for months because we can't find players. A Heavy Euro with worker placement, engine building, drafting, resource management, bluffing, area control, blah blah blah (translation: a very complicated game whose rulebook reads like a PhD thesis). We forget that the people we promised a fun evening haven't played hundreds of games over the past few years. There is nothing fun about listening to 30 minutes of rules you don't really understand, only to sit through hours of agony, hundreds of pointless decisions and dozens of rules repeated ad infinitum. Everyone goes home convinced that board games aren't for them. Maybe they weren't the wrong people, but choosing that game as a first experience certainly was.",
+      "Another very common situation arises when someone is genuinely curious and wants to start this hobby. We're already at a point where, much like books, films or other forms of art and entertainment, it's impossible to play every game that exists in a single lifetime. For a newcomer, this very easily turns into choice paralysis. Where do you even start when there are dozens of beginner-friendly games recommended by dozens of different people, each swearing that \"this one\" is the perfect game for you?",
+      "Through DiceZone, we aim to overcome all of these problems. We don't lead with the heaviest collection, though we have those too, for those who are ready. We take things step by step. We start with introductory games, easy to explain and understand, games you enjoy from the very first round. With every new game we introduce, we change the mechanics, and with each session we gradually raise the difficulty, so that over time we can discover together what worker placement, drafting or deduction actually mean by playing, without ever feeling overwhelmed.",
+      "DiceZone was born from the desire that board games should not remain a closed circle, for insiders only.",
     ],
-    approachTitle: "Our approach",
-    approach1:
-      "Every event is facilitated by someone who knows the games and your goals. We handle setup, rules, pacing, and a short debrief that connects play to real-world teamwork or learning outcomes.",
-    approach2:
-      "Whether you're planning an offsite, a school workshop, or a weekend rental, we're here to make it easy and genuinely fun.",
-    photoCaption:
-      "Every session is built around the table, where conversation, laughter, and teamwork happen naturally.",
+    founderP1GameNames: "Rummy, Activity or even Catan",
+    founderP2Mechanics: "A Heavy Euro with worker placement, engine building, drafting, resource management, bluffing, area control, blah blah blah",
+    founderP2Translation: "(translation: a very complicated game whose rulebook reads like a PhD thesis)",
   },
   contact: {
     metaTitle: "Contact",
@@ -451,6 +446,189 @@ export const en: Dictionary = {
     },
     "love-letter": {
       description: "Read your opponents, deduce the cards they’re holding, and make every move count to eliminate rivals and win the princess’s favor. A fast-paced game of social deduction and bluffing.",
+    },
+    "sheriff-of-nottingham": {
+      description: "A bluffing and negotiation game where you try to smuggle goods into the city, deceive other players, and avoid the sheriff’s inspections.",
+    },
+    "7wonders": {
+      description: "Build your own civilization, gather resources, and construct impressive wonders to earn the most points.",
+    },
+    "skull": {
+      description: "Bluff, take risks, and read your opponents’ intentions to stay in the game and score the most points.",
+    },
+    "zenith": {
+      description: "Lead your faction to victory, influence planets, and make strategic decisions to gain control of the galaxy.",
+    },
+    "toy-battle": {
+      description: "Lead your toy army across the battlefield, capture key positions, and use clever tactics to defeat your opponents.",
+    },
+    "my-gold-mine": {
+      description: "Dig for treasure, avoid traps, and decide when to retreat before you lose everything you’ve collected.",
+    },  
+    "welcome-to-the-dungeon": {
+      description: "Enter the dungeon, face dangerous monsters, and decide how much risk to take to become the last adventurer standing.",
+    },
+    "alias-party": {
+      description: "Explain, mime, or describe words and expressions to help your team guess as many as possible before time runs out.",
+    },
+    "coup": {
+      description: "Bluff, manipulate, and eliminate your opponents using your influence and special abilities to remain the last player in the game.",
+    },
+    "coatl": {
+      description: "Build the most impressive sacred serpent, combine colorful tiles, and collect decorations to earn the most points.",
+    },
+    "one-night-ultimate-werewolf": {
+      description: "Use your secret role, bluff convincingly, and uncover the werewolves before it's too late.",
+    },
+    "marvel-united": {
+      description: "Choose your favorite hero, work together with your team, and use your powers to stop the villain's evil plans.",
+    },
+    "activity": {
+      description: "Mime, draw, or describe words against the clock. The classic party game that guarantees laughter and unforgettable moments.",
+    },
+    "angel-fury": {
+      description: "Angels and demons clash across parallel worlds in this cooperative strategy game with a unique simultaneous dual-plane movement mechanic.",
+    },
+    "arkham-horror-tcg": {
+      description: "A cooperative card game with branching narratives set in Lovecraft's universe. Every decision shapes the story across multiple sessions.",
+    },
+    "battlelore": {
+      description: "Command medieval armies and fantasy creatures on the battlefield. Simple tactics, deep decisions, and pure head-to-head strategy.",
+    },
+    "binding-of-isaac-four-souls": {
+      description: "Based on the cult indie video game, Four Souls brings loot, monsters, and betrayal to the table. Chaotic and unpredictable fun for fans.",
+    },
+    "bloodborne-card-game": {
+      description: "Hunters explore catacombs and face terrifying monsters, but greed for loot can cost everything. Cooperative play with a hint of betrayal.",
+    },
+    "brew-crafters": {
+      description: "Run your own craft brewery: manage resources, hire workers, and perfect your recipes to dominate the local market.",
+    },
+    "captain-marvel-secret-skrulls": {
+      description: "Skrulls have infiltrated the team! Identify the impostors and save the day in this Marvel-themed social deduction game.",
+    },
+    "century-big-box": {
+      description: "The complete Century series: trade spices, build your route, and develop an elegant commercial engine. Accessible yet strategic.",
+    },
+    "chronicles-of-crime": {
+      description: "Solve criminal cases using a mobile app and QR code cards. Immersive investigations with branching stories and multiple endings.",
+    },
+    "citadels": {
+      description: "Build the most impressive district by choosing secret roles each round. Bluffing, strategy, and quick adaptation to opponents' moves.",
+    },
+    "codenames-duet": {
+      description: "The two-player cooperative version of Codenames. Work together to identify all your agents without triggering the assassin.",
+    },
+    "concordia": {
+      description: "Expand a trade network across the Roman Empire, manage resources, and build a long-term strategy through action cards.",
+    },
+    "destinies": {
+      description: "An app-driven adventure game where your choices shape a unique story. Exploration, deduction, and real consequences.",
+    },
+    "disney-villainous": {
+      description: "Each player becomes an iconic Disney villain with a unique objective. Asymmetric strategies, sabotage, and spectacular visual theming.",
+    },
+    "disney-villainous-wicked-to-the-core": {
+      description: "Expand Disney Villainous with Evil Queen, Hades, and Dr. Facilier. New mechanics and unique objectives for each villain.",
+    },
+    "disney-villainous-evil-comes-prepared": {
+      description: "Scar, Yzma, and Ratigan join with new strategic challenges. Fully compatible with all other Villainous sets.",
+    },
+    "disney-villainous-perfectly-wretched": {
+      description: "Cruella De Vil, Pete, and Mother Gothel bring new mechanics to the Villainous universe. Every villain plays completely differently.",
+    },
+    "disney-villainous-despicable-plots": {
+      description: "Dr. Drakken, Gaston, and Lady Tremaine complete the collection. A standalone set that combines with any other Villainous box.",
+    },
+    "dungeon-mayhem": {
+      description: "Four D&D heroes battle in a fast, chaotic brawl. Action-packed cards, spectacular effects, and games under 10 minutes.",
+    },
+    "dungeon-mayhem-monster-madness": {
+      description: "Expand Dungeon Mayhem with playable monsters. Up to 6 players, new abilities, and guaranteed chaos every session.",
+    },
+    "elder-sign": {
+      description: "Investigators explore a cursed museum trying to prevent an Ancient One from awakening. Cooperative race against time in the Arkham universe.",
+    },
+    "everdell": {
+      description: "Build a city of woodland creatures by placing workers and playing cards. Visually stunning, strategically accessible, deeply satisfying.",
+    },
+    "gizmos": {
+      description: "Build a marble-powered engine of gadgets that chain-trigger each other. An elegant, fast, and deeply satisfying engine-building game.",
+    },
+    "gloom": {
+      description: "Bring as much misery to your family as possible before they all die. Transparent overlapping cards and an absurd, hilarious narrative.",
+    },
+    "god-of-war-card-game": {
+      description: "Kratos and allies face the Norse gods in this cooperative game based on the video game series. Intense combat, tough decisions, epic story.",
+    },
+    "grimm-forest": {
+      description: "Build houses of straw, wood, or brick before the wolf arrives. A strategic fairytale game with beautiful components, great for families.",
+    },
+    "hansa-teutonica": {
+      description: "Expand the Hanseatic League's trade network across medieval Germany. Pure area-control and route strategy.",
+    },
+    "istanbul-big-box": {
+      description: "Cross the Istanbul bazaar with assistants and collect rubies to win. The complete collection including all expansions.",
+    },
+    "legendary-marvel": {
+      description: "Build a deck of Marvel heroes and cooperate to defeat a powerful villain. Accessible deckbuilding with a universally loved theme.",
+    },
+    "mansions-of-madness": {
+      description: "Explore a haunted mansion guided by a mobile app. Investigators vs cosmic horrors in a cooperative adventure with unique stories each time.",
+    },
+    "marvel-champions": {
+      description: "A cooperative card game where every Marvel hero has a unique deck. Face villains in 45–90 minute sessions packed with action.",
+    },
+    "monopoly-cheaters": {
+      description: "The Monopoly variant that officially encourages cheating. Steal money, move pieces without permission, and avoid getting caught.",
+    },
+    "munchkin": {
+      description: "Slay monsters, loot treasure, and stab your friends in this dungeon-crawl parody. Guaranteed chaotic fun every time.",
+    },
+    "paladins-west-kingdom": {
+      description: "Defend the medieval kingdom by placing workers, constructing buildings, and carefully managing resources. A complex and deeply rewarding eurogame.",
+    },
+    "pass-the-bomb": {
+      description: "Quickly find words with certain letters before the bomb explodes. Fast, frantic, and perfect for large groups.",
+    },
+    "prodigals-club": {
+      description: "Lose your fortune, reputation, and political seat as efficiently as possible. A strategic game with a uniquely inverted premise.",
+    },
+    "regatul-lui-enroh": {
+      description: "A Romanian strategy game with original mechanics. Build your kingdom and defeat your opponent in this two-player fantasy world.",
+    },
+    "rise-of-queensdale": {
+      description: "A legacy game with a branching story where decisions in one session shape future ones. Build a kingdom from scratch over multiple plays.",
+    },
+    "root": {
+      description: "Four asymmetric factions battle for control of the forest, each playing completely differently. One of the most innovative strategy games made.",
+    },
+    "slay-the-spire": {
+      description: "Board game adaptation of the cult video game: build a deck, fight monsters, and climb to the spire's peak. Cooperative, strategic, infinitely replayable.",
+    },
+    "star-realms": {
+      description: "Space deckbuilding duel: buy ships, build your fleet, and destroy the opponent's base. Fast, deep, and perfect for two players.",
+    },
+    "stone-age": {
+      description: "Manage a prehistoric tribe: place workers, collect resources, and build tools to advance your civilization faster than your rivals.",
+    },
+    "stygian-society": {
+      description: "Solve mysteries in secret societies using deduction and cooperative mechanics. A thematic investigation experience for 1–4 players.",
+    },
+    "tekhenu": {
+      description: "Raise an obelisk in ancient Egypt by balancing sun gods, managing resources, and constructing monuments. One of the heaviest eurogames.",
+    },
+    "terraforming-mars": {
+      description: "Corporations compete to make Mars habitable. Complex card engines, deep engine-building, and enormous replayability.",
+    },
+    "thanos-rising": {
+      description: "Marvel heroes cooperate to stop Thanos before he collects all the Infinity Stones. Tense, thematic, and accessible.",
+    },
+    "this-war-of-mine": {
+      description: "Survive in a besieged city making difficult moral decisions. A cooperative experience with a serious theme, based on the video game.",
+    },
+    "unconscious-mind": {
+      description: "Explore the Freudian subconscious by building neural networks and interpreting dreams. A dense, original eurogame with a wholly unique theme.",
     },
   },
 };

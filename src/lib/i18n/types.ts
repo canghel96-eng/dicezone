@@ -162,12 +162,10 @@ export type Dictionary = {
     metaTitle: string;
     heroTitle: string;
     heroDescription: string;
-    intro: string;
-    whatTitle: string;
-    whatItems: string[];
-    approachTitle: string;
-    approach1: string;
-    approach2: string;
+    founderParagraphs: string[];
+    founderP1GameNames: string;
+    founderP2Mechanics: string;
+    founderP2Translation: string;
     photoCaption: string;
   };
   contact: {
