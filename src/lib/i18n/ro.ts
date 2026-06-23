@@ -357,7 +357,7 @@ export const ro: Dictionary = {
     founderP1GameNames: "Rummy, Activity sau poate chiar Catan",
     founderP2Mechanics: "Un Heavy Euro cu mecanici de worker placement, engine building, drafting, resource management, bluffing, area control, bla bla bla",
     founderP2Translation: "(traducere: un joc foarte greu, al cărui regulament e o lucrare de doctorat)",
-
+    photoCaption: "Ciprian, fondatorul DiceZone",
   },
   contact: {
     metaTitle: "Contact",
